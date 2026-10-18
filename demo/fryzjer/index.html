@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Loka · salon fryzjerski (projekt demonstracyjny)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%23161314'/><path d='M30 70 Q50 10 70 70' stroke='%23e9b8a8' stroke-width='10' fill='none'/></svg>">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="demo-bar">Projekt demonstracyjny Klikoo · fikcyjny salon</div>
+<header class="nav"><a href="#top" class="brand">studio<b>loka</b></a>
+<nav id="menu"><a href="#uslugi">Usługi</a><a href="#efekty">Efekty</a><a href="#galeria">Galeria</a><a href="#kontakt">Kontakt</a><a href="#rezerwacja" class="btn sm">Umów wizytę</a></nav>
+<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button></header>
+
+<section class="hero" id="top">
+  <div class="hero-txt">
+    <p class="eyebrow">Salon fryzjerski</p>
+    <h1><span class="sw" id="sw">Cięcie.</span><br>Kolor. Ty.</h1>
+    <p>Fryzury dopasowane do ciebie, nie do trendu. Konsultacja przed każdą usługą, spokojna atmosfera i dobra kawa.</p>
+    <a href="#rezerwacja" class="btn">Umów wizytę online</a>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="ring"></div>
+    <svg class="head" viewBox="0 0 300 340"><path d="M60 170 Q55 40 150 35 Q250 40 240 175 Q245 260 200 300 L100 300 Q55 260 60 170Z" fill="#3a2a2b" class="hair"/><ellipse cx="150" cy="175" rx="70" ry="88" fill="#f1cdb8"/><path d="M80 150 Q100 70 190 90 Q230 110 225 160 Q200 110 140 115 Q100 120 80 150Z" fill="#3a2a2b" class="hair"/><circle cx="125" cy="180" r="5" fill="#3a2a2b"/><circle cx="175" cy="180" r="5" fill="#3a2a2b"/><path d="M135 222 q15 10 30 0" stroke="#c46f6f" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="125" y="255" width="50" height="50" fill="#f1cdb8"/><path d="M60 340 Q150 270 240 340Z" fill="#e9b8a8"/></svg>
+    <svg class="scissors" viewBox="0 0 100 100"><circle cx="25" cy="72" r="13" fill="none" stroke="#d8b26e" stroke-width="6"/><circle cx="25" cy="30" r="13" fill="none" stroke="#d8b26e" stroke-width="6"/><path d="M36 64 L92 38 M36 38 L92 64" stroke="#d8b26e" stroke-width="6" stroke-linecap="round"/></svg>
+    <div class="swatches"><button style="--c:#3a2a2b" aria-label="Brąz" class="on"></button><button style="--c:#b0603a" aria-label="Miedź"></button><button style="--c:#d9b46a" aria-label="Blond"></button><button style="--c:#8a6ad8" aria-label="Fiolet"></button><button style="--c:#d86a8f" aria-label="Róż"></button></div>
+  </div>
+</section>
+
+<section id="uslugi" class="wrap">
+  <h2>Usługi i ceny</h2><p class="sub">Ceny przykładowe w fikcyjnym salonie.</p>
+  <div class="seg"><button class="on" data-f="all">Wszystkie</button><button data-f="d">Damskie</button><button data-f="m">Męskie</button><button data-f="k">Koloryzacja</button></div>
+  <div class="svc" id="svc">
+    <div class="s" data-f="d"><div><h3>Strzyżenie damskie</h3><p>mycie, strzyżenie, modelowanie · ok. 60 min</p></div><b>od 90 zł</b></div>
+    <div class="s" data-f="d"><div><h3>Modelowanie</h3><p>mycie i stylizacja · ok. 40 min</p></div><b>od 60 zł</b></div>
+    <div class="s" data-f="d"><div><h3>Upięcie okolicznościowe</h3><p>na wesele, studniówkę · ok. 75 min</p></div><b>od 150 zł</b></div>
+    <div class="s" data-f="m"><div><h3>Strzyżenie męskie</h3><p>maszynka i nożyczki · ok. 40 min</p></div><b>od 55 zł</b></div>
+    <div class="s" data-f="m"><div><h3>Strzyżenie + broda</h3><p>trymowanie, konturowanie · ok. 60 min</p></div><b>od 85 zł</b></div>
+    <div class="s" data-f="k"><div><h3>Koloryzacja jednolita</h3><p>farbowanie całości · ok. 120 min</p></div><b>od 180 zł</b></div>
+    <div class="s" data-f="k"><div><h3>Baleyage / sombre</h3><p>naturalne rozjaśnienia · ok. 180 min</p></div><b>od 350 zł</b></div>
+    <div class="s" data-f="d k"><div><h3>Regeneracja włosów</h3><p>zabieg odbudowujący · ok. 45 min</p></div><b>od 120 zł</b></div>
+  </div>
+</section>
+
+<section id="efekty" class="wrap">
+  <h2>Przed i po</h2><p class="sub">Ilustracja poglądowa. Przeciągnij suwak.</p>
+  <div class="ba" id="ba">
+    <svg class="before" viewBox="0 0 600 360"><rect width="600" height="360" fill="#e7dcd6"/><g transform="translate(300 40)"><path d="M-110 120 Q-140 -20 0 -20 Q140 -20 110 120 Q130 220 150 320 L-150 320 Q-130 220 -110 120Z" fill="#8a7466"/><path d="M-120 40 L-160 10 M120 40 L165 15 M-90 0 L-120 -40 M100 5 L130 -30" stroke="#8a7466" stroke-width="12" stroke-linecap="round"/><ellipse cx="0" cy="130" rx="70" ry="88" fill="#f1cdb8"/><circle cx="-25" cy="135" r="5" fill="#3a2a2b"/><circle cx="25" cy="135" r="5" fill="#3a2a2b"/><path d="M-15 180 h30" stroke="#c46f6f" stroke-width="5" stroke-linecap="round"/></g><text x="24" y="40" font-family="system-ui" font-weight="700" fill="#6b5a52">PRZED</text></svg>
+    <div class="after" id="after"><svg viewBox="0 0 600 360"><rect width="600" height="360" fill="#f6e3dc"/><g transform="translate(300 40)"><path d="M-95 130 Q-110 -10 0 -15 Q110 -10 95 130 Q100 190 80 220 L-80 220 Q-100 190 -95 130Z" fill="#b0603a"/><path d="M-70 60 Q-20 0 80 40 Q60 10 0 5 Q-60 10 -70 60Z" fill="#d9b46a" opacity=".7"/><ellipse cx="0" cy="130" rx="70" ry="88" fill="#f1cdb8"/><path d="M-72 100 Q-30 30 70 70 Q60 20 0 18 Q-65 25 -72 100Z" fill="#b0603a"/><circle cx="-25" cy="135" r="5" fill="#3a2a2b"/><circle cx="25" cy="135" r="5" fill="#3a2a2b"/><path d="M-15 175 q15 10 30 0" stroke="#c46f6f" stroke-width="5" fill="none" stroke-linecap="round"/></g><text x="530" y="40" font-family="system-ui" font-weight="700" fill="#a0533a">PO</text></svg></div>
+    <div class="handle" id="handle"><span>⇆</span></div>
+    <input type="range" min="0" max="100" value="50" id="baR" aria-label="Porównaj przed i po">
+  </div>
+</section>
+
+<section id="galeria" class="wrap">
+  <h2>Galeria</h2><p class="sub">Ilustracje poglądowe fryzur.</p>
+  <div class="gal" id="gal"></div>
+</section>
+
+<section id="rezerwacja" class="wrap">
+  <h2>Umów wizytę</h2><p class="sub">Formularz demonstracyjny, rezerwacja nie jest nigdzie wysyłana.</p>
+  <div class="book">
+    <div class="steps">
+      <h4>1. Usługa</h4><div class="chips" id="bSvc"></div>
+      <h4>2. Dzień</h4><div class="days" id="bDay"></div>
+      <h4>3. Godzina</h4><div class="slots" id="bSlot"></div>
+    </div>
+    <form class="sum" id="bForm" novalidate>
+      <h4>Podsumowanie</h4>
+      <dl><dt>Usługa</dt><dd id="sS">–</dd><dt>Termin</dt><dd id="sT">–</dd><dt>Cena</dt><dd id="sP">–</dd></dl>
+      <input name="n" placeholder="Imię" required aria-label="Imię"><input name="t" type="tel" placeholder="Telefon [000 000 000]" required aria-label="Telefon">
+      <button class="btn" type="submit">Rezerwuję</button><p class="hint" id="bHint"></p>
+    </form>
+    <div class="sum done" id="bDone" hidden><div class="ok">✂︎</div><h4>Do zobaczenia!</h4><p id="bDoneT"></p><p class="hint">To wersja demo, nic nie zostało wysłane.</p></div>
+  </div>
+</section>
+
+<section id="kontakt" class="wrap split">
+  <div><h2>Godziny</h2><ul class="hours"><li><span>Pon – Pt</span><span>9:00 – 19:00</span></li><li><span>Sobota</span><span>9:00 – 15:00</span></li><li><span>Niedziela</span><span>nieczynne</span></li></ul>
+    <p class="contact">☎ [+48 000 000 000]<br>✉ [kontakt@przyklad.pl]<br>📍 [ul. Przykładowa 2, 00-000 Miasto]</p></div>
+  <div class="map"><svg viewBox="0 0 400 280" aria-hidden="true"><rect width="400" height="280" fill="#2a2426"/><path d="M0 200 L400 140" stroke="#3d3537" stroke-width="22"/><path d="M160 0 L210 280" stroke="#3d3537" stroke-width="16"/><path d="M0 70 L400 50" stroke="#3d3537" stroke-width="10"/></svg><div class="pin"></div><p>[Mapa Google – do osadzenia]</p></div>
+</section>
+
+<footer><span class="brand">studio<b>loka</b></span><p>Projekt demonstracyjny <a href="../../">Klikoo</a> · salon, usługi i ceny są fikcyjne</p></footer>
+<script src="main.js"></script></body></html>

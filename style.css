@@ -132,3 +132,4 @@ footer{max-width:1180px;margin:60px auto 20px;padding:24px;display:flex;justify-
 .real-tag{background:var(--mint)!important;color:#1d6b4f;top:26px!important;left:26px!important;z-index:2}
 .real h3{font-size:1.4rem;padding:0 6px}.real p{padding:0 6px;font-size:.95rem}
 .go{margin:8px 6px 0;font-weight:800;color:var(--acc)}
+.demo-tag{background:var(--butter)!important;color:#8a6400;top:26px!important;left:26px!important;z-index:2}

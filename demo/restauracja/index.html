@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smakownia Kasztan · bistro (projekt demonstracyjny)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23234a3a'/><circle cx='50' cy='54' r='22' fill='%23c8793d'/></svg>">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="demo-bar">Projekt demonstracyjny Klikoo · fikcyjny lokal</div>
+<header class="nav"><a href="#top" class="brand"><svg viewBox="0 0 40 40" width="34" aria-hidden="true"><circle cx="20" cy="22" r="13" fill="#c8793d"/><path d="M20 9c-3-5 4-7 6-4" stroke="#234a3a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="16" cy="19" r="3" fill="#f5ead8" opacity=".6"/></svg><span>Smakownia <em>Kasztan</em></span></a>
+<nav id="menu"><a href="#karta">Karta</a><a href="#galeria">Galeria</a><a href="#godziny">Godziny</a><a href="#rezerwacja" class="btn sm">Zarezerwuj stolik</a></nav>
+<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button></header>
+
+<section class="hero" id="top">
+  <div class="hero-txt">
+    <p class="eyebrow">Bistro · kuchnia sezonowa</p>
+    <h1>Proste jedzenie,<br><em>zrobione porządnie.</em></h1>
+    <p>Domowe obiady, świeże pieczywo i kawa z lokalnej palarni. Wpadnij na lunch albo zarezerwuj stolik na kolację.</p>
+    <div class="row"><a href="#rezerwacja" class="btn">Zarezerwuj stolik</a><a href="#karta" class="btn ghost">Zobacz kartę</a></div>
+    <p class="status" id="status"><i></i><span>Sprawdzam godziny…</span></p>
+  </div>
+  <div class="plate-wrap" aria-hidden="true">
+    <div class="plate" id="plate">
+      <svg viewBox="0 0 300 300"><circle cx="150" cy="150" r="140" fill="#fff"/><circle cx="150" cy="150" r="112" fill="#f6efe3"/>
+      <ellipse cx="130" cy="140" rx="52" ry="34" fill="#c8793d"/><ellipse cx="122" cy="130" rx="22" ry="9" fill="#e3a46a" opacity=".7"/>
+      <circle cx="190" cy="120" r="16" fill="#7aa35a"/><circle cx="200" cy="140" r="13" fill="#5d8a45"/><circle cx="180" cy="142" r="11" fill="#8fb86b"/>
+      <path d="M100 190 q50 30 100 0" stroke="#b5462f" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <circle cx="160" cy="185" r="7" fill="#e8c547"/><circle cx="140" cy="196" r="6" fill="#e8c547"/></svg>
+    </div>
+    <span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span>
+  </div>
+</section>
+
+<section id="karta" class="wrap">
+  <h2>Karta</h2><p class="sub">Ceny przykładowe w fikcyjnym lokalu.</p>
+  <div class="tabs" role="tablist">
+    <button class="on" data-c="sniadania">Śniadania</button><button data-c="obiady">Obiady</button><button data-c="desery">Desery</button><button data-c="napoje">Napoje</button>
+  </div>
+  <ul class="menu" id="menuList">
+    <li data-c="sniadania"><div><h3>Jajecznica na maśle</h3><p>trzy jaja, szczypiorek, pieczywo na zakwasie</p></div><b>24 zł</b></li>
+    <li data-c="sniadania"><div><h3>Owsianka sezonowa</h3><p>owoce z sezonu, orzechy, miód</p></div><b>21 zł</b></li>
+    <li data-c="sniadania"><div><h3>Tosty z awokado</h3><p>jajko w koszulce, rzodkiewka, kiełki</p></div><b>29 zł</b></li>
+    <li data-c="obiady"><div><h3>Pierogi ruskie</h3><p>8 sztuk, cebulka, śmietana</p></div><b>32 zł</b></li>
+    <li data-c="obiady"><div><h3>Kotlet schabowy</h3><p>ziemniaki z koperkiem, mizeria</p></div><b>42 zł</b></li>
+    <li data-c="obiady"><div><h3>Krem z dyni</h3><p>pestki, olej dyniowy, grzanki</p></div><b>22 zł</b><span class="veg">wege</span></li>
+    <li data-c="obiady"><div><h3>Risotto z grzybami</h3><p>leśne grzyby, parmezan, tymianek</p></div><b>45 zł</b><span class="veg">wege</span></li>
+    <li data-c="desery"><div><h3>Szarlotka na ciepło</h3><p>gałka lodów waniliowych</p></div><b>19 zł</b></li>
+    <li data-c="desery"><div><h3>Sernik baskijski</h3><p>sos z owoców leśnych</p></div><b>21 zł</b></li>
+    <li data-c="napoje"><div><h3>Kawa przelewowa</h3><p>ziarno z lokalnej palarni</p></div><b>14 zł</b></li>
+    <li data-c="napoje"><div><h3>Lemoniada domowa</h3><p>cytryna, mięta, miód</p></div><b>15 zł</b></li>
+    <li data-c="napoje"><div><h3>Kompot z owoców</h3><p>jak u babci, dzbanek 1 l</p></div><b>18 zł</b></li>
+  </ul>
+</section>
+
+<section id="galeria" class="wrap">
+  <h2>Galeria</h2><p class="sub">Ilustracje poglądowe. Kliknij, żeby powiększyć.</p>
+  <div class="gal">
+    <button class="g g1" data-t="Pierogi ruskie"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#e9dcc6"/><circle cx="100" cy="78" r="58" fill="#fff"/><g fill="#f1d9a8" stroke="#d9b77a" stroke-width="2"><path d="M60 80 q20-35 40 0z"/><path d="M95 70 q20-35 40 0z"/><path d="M75 100 q20-35 40 0z"/></g><circle cx="88" cy="60" r="4" fill="#7aa35a"/><circle cx="118" cy="92" r="4" fill="#7aa35a"/></svg></button>
+    <button class="g g2" data-t="Krem z dyni"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#234a3a"/><circle cx="100" cy="75" r="55" fill="#f5ead8"/><circle cx="100" cy="75" r="42" fill="#e08a32"/><path d="M80 70 q20 15 40 0" stroke="#f5ead8" stroke-width="4" fill="none"/><circle cx="110" cy="85" r="3" fill="#3d6b2e"/><circle cx="92" cy="88" r="3" fill="#3d6b2e"/></svg></button>
+    <button class="g g3" data-t="Sernik baskijski"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#f3c9b6"/><path d="M50 100 L100 50 L150 100 Z" fill="#f6e1b0"/><path d="M50 100 L100 50 L150 100 L150 112 L50 112Z" fill="#c8793d" opacity=".25"/><path d="M50 100 L150 100" stroke="#8a4a22" stroke-width="5"/><circle cx="95" cy="72" r="6" fill="#7a2240"/><circle cx="108" cy="80" r="5" fill="#3a2a6a"/></svg></button>
+    <button class="g g4" data-t="Kawa przelewowa"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#c8793d"/><rect x="70" y="55" width="55" height="60" rx="8" fill="#f5ead8"/><path d="M125 70 q22 0 0 28" stroke="#f5ead8" stroke-width="7" fill="none"/><ellipse cx="97" cy="58" rx="25" ry="5" fill="#4a2a17"/><path d="M88 45 q6-10 0-20 M104 45 q6-10 0-20" stroke="#fff" stroke-width="3" fill="none" opacity=".7"/></svg></button>
+    <button class="g g5" data-t="Sala"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#f5ead8"/><rect x="0" y="105" width="200" height="45" fill="#d8c4a2"/><rect x="30" y="20" width="50" height="60" rx="25" fill="#bcd3e0"/><rect x="120" y="20" width="50" height="60" rx="25" fill="#bcd3e0"/><rect x="40" y="90" width="120" height="8" rx="3" fill="#8a5a33"/><rect x="55" y="98" width="6" height="30" fill="#8a5a33"/><rect x="140" y="98" width="6" height="30" fill="#8a5a33"/><path d="M98 20 v20" stroke="#333" stroke-width="2"/><circle cx="98" cy="45" r="8" fill="#e8c547"/></svg></button>
+    <button class="g g6" data-t="Lemoniada"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#dbe8c8"/><path d="M75 35 h50 l-6 85 h-38z" fill="#fffbe0" stroke="#9ab86f" stroke-width="3"/><circle cx="100" cy="70" r="14" fill="#f2d84b"/><circle cx="100" cy="70" r="9" fill="#fbe98a"/><path d="M110 30 l15-15" stroke="#5d8a45" stroke-width="4"/></svg></button>
+  </div>
+</section>
+
+<section id="godziny" class="wrap split">
+  <div><h2>Godziny otwarcia</h2>
+    <table class="hours" id="hours"><tbody>
+      <tr data-d="1"><td>Poniedziałek</td><td>nieczynne</td></tr><tr data-d="2"><td>Wtorek</td><td>11:00 – 21:00</td></tr><tr data-d="3"><td>Środa</td><td>11:00 – 21:00</td></tr><tr data-d="4"><td>Czwartek</td><td>11:00 – 21:00</td></tr><tr data-d="5"><td>Piątek</td><td>11:00 – 23:00</td></tr><tr data-d="6"><td>Sobota</td><td>9:00 – 23:00</td></tr><tr data-d="0"><td>Niedziela</td><td>9:00 – 20:00</td></tr>
+    </tbody></table></div>
+  <div><h2>Dojazd</h2><div class="map"><svg viewBox="0 0 400 260" aria-hidden="true"><rect width="400" height="260" fill="#e9e2d2"/><path d="M0 180 L400 120" stroke="#fff" stroke-width="22"/><path d="M140 0 L190 260" stroke="#fff" stroke-width="16"/><path d="M0 60 L400 40" stroke="#fff" stroke-width="10"/><rect x="250" y="160" width="90" height="60" fill="#c9d9b6"/></svg><div class="pin">📍</div><p>[Mapa Google – do osadzenia]<br>[ul. Przykładowa 1, 00-000 Miasto]</p></div></div>
+</section>
+
+<section id="rezerwacja" class="wrap narrow">
+  <h2>Zarezerwuj stolik</h2><p class="sub">Formularz demonstracyjny, rezerwacja nie jest nigdzie wysyłana.</p>
+  <form id="res" class="card" novalidate>
+    <div class="grid2">
+      <label>Imię<input name="n" required></label>
+      <label>Telefon<input name="t" type="tel" required placeholder="[000 000 000]"></label>
+      <label>Data<input name="d" type="date" required id="date"></label>
+      <label>Godzina<select name="h" id="hour" required></select></label>
+    </div>
+    <div class="people"><span>Liczba osób</span><button type="button" id="minus" aria-label="Mniej">−</button><output id="ppl">2</output><button type="button" id="plus" aria-label="Więcej">+</button><span class="tbl" id="tbl"></span></div>
+    <label>Uwagi (opcjonalnie)<textarea name="u" rows="3" placeholder="np. krzesełko dla dziecka"></textarea></label>
+    <button class="btn" type="submit">Zarezerwuj</button>
+  </form>
+  <div class="card done" id="done" hidden><div class="ok">✓</div><h3>Stolik czeka!</h3><p id="doneTxt"></p><p class="small">To wersja demo, nic nie zostało wysłane.</p></div>
+</section>
+
+<footer><div><b>Smakownia Kasztan</b><br>[ul. Przykładowa 1, 00-000 Miasto]<br>☎ [+48 000 000 000] · ✉ [kontakt@przyklad.pl]</div><p class="demo">Projekt demonstracyjny <a href="../../" >Klikoo</a> · lokal, dania i ceny są fikcyjne</p></footer>
+<div class="lightbox" id="lb" hidden><button aria-label="Zamknij">×</button><div id="lbImg"></div><p id="lbT"></p></div>
+<script src="main.js"></script></body></html>
