@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klikoo · strony i wizytówki Google, które lubią klientów</title>
+<meta name="description" content="Klikoo: proste, przyjazne strony internetowe i wizytówki Google dla małych firm w całej Polsce.">
+<link rel="icon" href="logo/final/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="logo/final/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo/final/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="nav"><a href="#top" class="logo" aria-label="Klikoo – strona główna"><img src="logo/final/logo.svg" alt="Klikoo" width="121" height="40"></a>
+<nav id="menu"><a href="#uslugi">Usługi</a><a href="#kroki">Kroki</a><a href="#przyklady">Przykłady</a><a href="#kreator">Kreator</a><a href="#faq">FAQ</a><a href="#kontakt" class="pill">Napisz 👋</a></nav>
+<button class="burger" aria-label="Menu" aria-expanded="false">☰</button></header>
+
+<main class="bento" id="top">
+  <section class="tile hero t-lav">
+    <p class="chip">👋 Hej, tu Klikoo</p>
+    <h1>Strony, które <span class="wiggle">lubią</span> twoich klientów.</h1>
+    <p class="lead">Robimy proste strony www i wizytówki Google dla małych firm z całej Polski. Miło, szybko i bez technicznego bełkotu.</p>
+    <a href="#kreator" class="btn">Złóż swoją stronę ✨</a>
+  </section>
+  <section class="tile play t-peach" aria-label="Pole do zabawy">
+    <p class="hint">Złap i przeciągnij 👆</p>
+    <div class="sticker" style="left:10%;top:22%;--r:-8deg">🌐 www</div>
+    <div class="sticker" style="left:46%;top:14%;--r:6deg">📍 Mapy</div>
+    <div class="sticker" style="left:18%;top:58%;--r:4deg">📱 mobile</div>
+    <div class="sticker" style="left:55%;top:55%;--r:-5deg">⚡ szybko</div>
+  </section>
+  <section class="tile mini t-mint"><span class="emo bounce">📍</span><p>Twoja firma<br><b>w Mapach Google</b></p></section>
+  <section class="tile mini t-butter"><span class="emo spin">🇵🇱</span><p>Pracujemy<br><b>z całą Polską</b></p></section>
+</main>
+
+<section id="uslugi" class="sec">
+  <h2>Co robimy <span class="em">🛠</span></h2>
+  <div class="bento b3">
+    <article class="tile svc t-lav" tabindex="0"><div class="ill">🌐</div><h3>Strony www</h3><p>Wizytówka albo kilka podstron. Śliczna na telefonie, szybka i czytelna.</p></article>
+    <article class="tile svc t-mint" tabindex="0"><div class="ill">📍</div><h3>Wizytówka Google</h3><p>Profil w Mapach: godziny, zdjęcia, opis. Żeby klienci z okolicy trafili do ciebie.</p></article>
+    <article class="tile svc t-peach" tabindex="0"><div class="ill">🪄</div><h3>Odświeżenie strony</h3><p>Stara strona dostaje nowe życie i wygląda jak z tego roku.</p></article>
+  </div>
+</section>
+
+<section id="kroki" class="sec">
+  <h2>Jak to działa <span class="em">🧭</span></h2>
+  <div class="tile t-white stepper">
+    <div class="tabs" role="tablist">
+      <button role="tab" class="on" data-i="0">1 · Rozmowa</button><button role="tab" data-i="1">2 · Projekt</button><button role="tab" data-i="2">3 · Poprawki</button><button role="tab" data-i="3">4 · Start</button>
+    </div>
+    <div class="pane-wrap">
+      <div class="pane on"><span class="big-emo">💬</span><div><h3>Rozmowa</h3><p>Opowiadasz, czym się zajmujesz i czego potrzebujesz. Tyle.</p></div></div>
+      <div class="pane"><span class="big-emo">🎨</span><div><h3>Projekt</h3><p>Szykujemy propozycję wyglądu i treści.</p></div></div>
+      <div class="pane"><span class="big-emo">🔧</span><div><h3>Poprawki</h3><p>Zmieniamy, co trzeba, aż będziesz zadowolony.</p></div></div>
+      <div class="pane"><span class="big-emo">🚀</span><div><h3>Start</h3><p>Strona idzie w świat. Ty zajmujesz się klientami.</p></div></div>
+    </div>
+    <div class="auto"><i id="autoBar"></i></div>
+  </div>
+</section>
+
+<section id="przyklady" class="sec">
+  <h2>Przykłady <span class="badge">Przykładowe projekty</span></h2>
+  <p class="note">To projekty demonstracyjne, nie prawdziwi klienci. Przesuń karty palcem lub strzałkami.</p>
+  <div class="carousel-wrap">
+    <button class="arr" id="prev" aria-label="Poprzedni">←</button>
+    <div class="carousel" id="car">
+      <div class="proj t-lav"><div class="phone"><i></i><i></i><i></i></div><span class="ex">PRZYKŁAD</span><h3>Salon fryzjerski</h3><p>strona-wizytówka</p></div>
+      <div class="proj t-mint"><div class="phone"><i></i><i></i><i></i></div><span class="ex">PRZYKŁAD</span><h3>Warsztat samochodowy</h3><p>kilka podstron</p></div>
+      <div class="proj t-peach"><div class="phone"><i></i><i></i><i></i></div><span class="ex">PRZYKŁAD</span><h3>Restauracja</h3><p>Google + strona</p></div>
+      <div class="proj t-butter"><div class="phone"><i></i><i></i><i></i></div><span class="ex">PRZYKŁAD</span><h3>Twoja firma?</h3><p>miejsce na prawdziwą realizację</p></div>
+    </div>
+    <button class="arr" id="next" aria-label="Następny">→</button>
+  </div>
+</section>
+
+<section id="kreator" class="sec">
+  <h2>Złóż swoją stronę <span class="em">🧩</span></h2>
+  <p class="note">Przeciągnij klocki do koszyka (albo kliknij). <b class="warn">Ceny przykładowe, do potwierdzenia.</b></p>
+  <div class="bento b2">
+    <div class="tile t-white blocks" id="blocks">
+      <div class="blk" draggable="true" data-p="499" data-n="Strona-wizytówka">🏠 Strona-wizytówka <small>499 zł*</small></div>
+      <div class="blk" draggable="true" data-p="300" data-n="Dodatkowe podstrony">📄 Dodatkowe podstrony <small>300 zł*</small></div>
+      <div class="blk" draggable="true" data-p="199" data-n="Wizytówka Google">📍 Wizytówka Google <small>199 zł*</small></div>
+      <div class="blk" draggable="true" data-p="149" data-n="Galeria zdjęć">🖼 Galeria zdjęć <small>149 zł*</small></div>
+      <div class="blk" draggable="true" data-p="149" data-n="Formularz kontaktowy">✉️ Formularz kontaktowy <small>149 zł*</small></div>
+      <div class="blk" draggable="true" data-p="249" data-n="Teksty na stronę">✍️ Teksty na stronę <small>249 zł*</small></div>
+    </div>
+    <div class="tile t-lav basket" id="basket">
+      <div class="drop" id="drop"><p class="empty">🧺 Upuść tutaj</p></div>
+      <div class="sum"><span>Orientacyjnie</span><strong id="sum">0 zł</strong><small>* przykładowe kwoty, do potwierdzenia</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="cennik" class="sec">
+  <h2>Cennik <span class="badge">orientacyjny</span></h2>
+  <div class="bento b3">
+    <div class="tile price t-mint"><h3>Google</h3><div class="amt">[od 199 zł]</div><small>przykład, do potwierdzenia</small><ul><li>Profil w Mapach</li><li>Opis i zdjęcia</li></ul></div>
+    <div class="tile price t-lav pop"><span class="ribbon">💜 Na start</span><h3>Start</h3><div class="amt">[od 499 zł]</div><small>przykład, do potwierdzenia</small><ul><li>Strona-wizytówka</li><li>Wersja na telefon</li><li>Google w pakiecie</li></ul></div>
+    <div class="tile price t-peach"><h3>Biznes</h3><div class="amt">[od 999 zł]</div><small>przykład, do potwierdzenia</small><ul><li>Kilka podstron</li><li>Formularz i galeria</li></ul></div>
+  </div>
+</section>
+
+<section id="faq" class="sec narrow">
+  <h2>Pytania <span class="em">💭</span></h2>
+  <div class="chat" id="chat">
+    <div class="qs">
+      <button data-a="Prosta wizytówka zwykle kilka dni, zależnie od tego, jak szybko dostaniemy treści i zdjęcia. Dokładny termin po rozmowie.">Ile trwa zrobienie strony?</button>
+      <button data-a="Nie! Pracujemy zdalnie z firmami z całej Polski.">Działacie tylko lokalnie?</button>
+      <button data-a="Wcale. Domenę, hosting i wygląd bierzemy na siebie.">Muszę się znać na technice?</button>
+      <button data-a="To profil firmy w Mapach i wyszukiwarce Google: adres, godziny, zdjęcia i opinie.">Co to wizytówka Google?</button>
+    </div>
+    <div class="log" id="log"><div class="msg them">Cześć! Kliknij pytanie powyżej, a odpowiem 🙂</div></div>
+  </div>
+</section>
+
+<section id="kontakt" class="sec narrow">
+  <h2>Napisz do nas <span class="em">💌</span></h2>
+  <div class="tile t-white formtile">
+    <form id="form" novalidate>
+      <label>Jak masz na imię?<input name="n" required></label>
+      <label>Twój e-mail<input name="e" type="email" required></label>
+      <label>Czego potrzebujesz?<textarea name="m" rows="4" required></textarea></label>
+      <div class="moods" role="radiogroup" aria-label="Jak pilne?"><span>Jak pilne?</span><button type="button" class="on">😌 spokojnie</button><button type="button">🙂 w miarę</button><button type="button">🔥 na wczoraj</button></div>
+      <button class="btn" type="submit">Wyślij 💌</button>
+      <p class="note sm">Formularz demonstracyjny, nic nie jest jeszcze wysyłane.</p>
+    </form>
+    <div class="thanks" id="thanks" hidden><div class="big-emo">🎉</div><h3>Dzięki!</h3><p>Wiadomość dotarła (wersja demo). Odezwiemy się wkrótce.</p></div>
+  </div>
+  <p class="note">✉️ [adres@e-mail.pl] · 📞 [+48 000 000 000]</p>
+</section>
+
+<footer><span class="logo"><img src="logo/final/logo.svg" alt="Klikoo" width="109" height="36"></span><span>© <span id="yr"></span> Klikoo · Sylwester Kopeć · [dane do uzupełnienia]</span></footer>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<script src="main.js"></script></body></html>
