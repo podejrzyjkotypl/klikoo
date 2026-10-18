@@ -123,3 +123,12 @@ footer{max-width:1180px;margin:60px auto 20px;padding:24px;display:flex;justify-
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pop-in{opacity:1;transform:none}}
 
 .logo img{display:block;height:40px;width:auto;transition:transform .4s cubic-bezier(.3,1.8,.5,1)}.logo:hover img{transform:rotate(-4deg) scale(1.05)}footer .logo img{height:36px}
+
+.proj.real{flex-basis:min(86vw,460px);background:#fff;box-shadow:0 6px 24px #2b25400f;justify-content:flex-start;gap:6px;padding:16px 16px 22px}
+.real .shot{position:relative;border-radius:18px;overflow:hidden;margin-bottom:12px;aspect-ratio:864/600;background:#1c1830}
+.real .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .6s}
+.real .shot .m{position:absolute;right:10px;bottom:-30px;width:24%;height:auto;border-radius:12px;border:3px solid #fff;box-shadow:0 8px 20px #0004;transition:transform .5s cubic-bezier(.3,1.8,.5,1)}
+.proj.real:hover .shot img:first-child{transform:scale(1.04)}.proj.real:hover .m{transform:translateY(-22px) rotate(-4deg)}
+.real-tag{background:var(--mint)!important;color:#1d6b4f;top:26px!important;left:26px!important;z-index:2}
+.real h3{font-size:1.4rem;padding:0 6px}.real p{padding:0 6px;font-size:.95rem}
+.go{margin:8px 6px 0;font-weight:800;color:var(--acc)}

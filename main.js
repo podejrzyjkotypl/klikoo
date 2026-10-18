@@ -27,8 +27,10 @@
   const car = $('#car'), step = () => car.firstElementChild.offsetWidth + 16;
   $('#prev').addEventListener('click', () => car.scrollBy({ left: -step() })); $('#next').addEventListener('click', () => car.scrollBy({ left: step() }));
   let down = false, sx, sl;
-  car.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; sx = e.clientX; sl = car.scrollLeft; car.classList.add('dragging'); });
-  addEventListener('pointermove', e => { if (down) car.scrollLeft = sl - (e.clientX - sx); });
+  car.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; sx = e.clientX; sl = car.scrollLeft; moved = false; car.classList.add('dragging'); });
+  let moved = false;
+  addEventListener('pointermove', e => { if (down) { car.scrollLeft = sl - (e.clientX - sx); if (Math.abs(e.clientX - sx) > 6) moved = true; } });
+  car.addEventListener('click', e => { if (moved) { e.preventDefault(); moved = false; } }, true);
   addEventListener('pointerup', () => { if (down) { down = false; car.classList.remove('dragging'); } });
   // drag & drop builder
   const blocks = $('#blocks'), drop = $('#drop'), sumEl = $('#sum'); let shown = 0;
