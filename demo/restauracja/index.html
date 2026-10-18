@@ -1,90 +1,281 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smakownia Kasztan · bistro (projekt demonstracyjny)</title>
-<meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23234a3a'/><circle cx='50' cy='54' r='22' fill='%23c8793d'/></svg>">
-<link rel="stylesheet" href="style.css"></head><body>
-<div class="demo-bar">Projekt demonstracyjny Klikoo · fikcyjny lokal</div>
-<header class="nav"><a href="#top" class="brand"><svg viewBox="0 0 40 40" width="34" aria-hidden="true"><circle cx="20" cy="22" r="13" fill="#c8793d"/><path d="M20 9c-3-5 4-7 6-4" stroke="#234a3a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="16" cy="19" r="3" fill="#f5ead8" opacity=".6"/></svg><span>Smakownia <em>Kasztan</em></span></a>
-<nav id="menu"><a href="#karta">Karta</a><a href="#galeria">Galeria</a><a href="#godziny">Godziny</a><a href="#rezerwacja" class="btn sm">Zarezerwuj stolik</a></nav>
-<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button></header>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smakownia Kasztan · bistro sezonowe | projekt demonstracyjny</title>
+<meta name="description" content="Smakownia Kasztan – fikcyjne bistro z kuchnią sezonową. Projekt demonstracyjny studia Klikoo.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1c3329">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Smakownia Kasztan · bistro sezonowe (demo Klikoo)">
+<meta property="og:description" content="Kuchnia sezonowa, pieczywo na zakwasie i wino do kolacji. Projekt demonstracyjny.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231c3329'/><text x='32' y='45' font-family='Georgia' font-size='38' text-anchor='middle' fill='%23d79a62'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-1920.webp" imagesrcset="img/hero-640.webp 640w, img/hero.webp 1024w, img/hero-1920.webp 1920w" imagesizes="100vw">
+<link rel="stylesheet" href="kit.css"><link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Smakownia Kasztan (projekt demonstracyjny)","servesCuisine":"Polska, sezonowa","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"[ul. Przykładowa 1]","addressLocality":"[Miasto]"}}</script>
+</head>
+<body class="has-hero">
+<a href="#main" class="skip">Przejdź do treści</a>
+<div class="demo-note">Projekt demonstracyjny Klikoo · fikcyjny lokal, ceny przykładowe</div>
 
+<header class="nav">
+  <div class="container">
+    <a href="#top" class="brand" aria-label="Smakownia Kasztan – strona główna"><svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="23" r="13" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 10c-1-5 5-7 8-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 22c3 6 13 6 16 0" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><span>Smakownia <i>Kasztan</i></span></a>
+    <ul class="nav-links" id="menu">
+      <li><a href="#o-nas">O nas</a></li><li><a href="#karta">Karta</a></li><li><a href="#wino">Wino</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#wydarzenia">Wydarzenia</a></li><li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="icon-btn" data-theme-toggle aria-label="Przełącz tryb jasny/ciemny"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+      <a href="#rezerwacja" class="btn">Zarezerwuj</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
 <section class="hero" id="top">
-  <div class="hero-txt">
-    <p class="eyebrow">Bistro · kuchnia sezonowa</p>
-    <h1>Proste jedzenie,<br><em>zrobione porządnie.</em></h1>
-    <p>Domowe obiady, świeże pieczywo i kawa z lokalnej palarni. Wpadnij na lunch albo zarezerwuj stolik na kolację.</p>
-    <div class="row"><a href="#rezerwacja" class="btn">Zarezerwuj stolik</a><a href="#karta" class="btn ghost">Zobacz kartę</a></div>
-    <p class="status" id="status"><i></i><span>Sprawdzam godziny…</span></p>
-  </div>
-  <div class="plate-wrap" aria-hidden="true">
-    <div class="plate" id="plate">
-      <svg viewBox="0 0 300 300"><circle cx="150" cy="150" r="140" fill="#fff"/><circle cx="150" cy="150" r="112" fill="#f6efe3"/>
-      <ellipse cx="130" cy="140" rx="52" ry="34" fill="#c8793d"/><ellipse cx="122" cy="130" rx="22" ry="9" fill="#e3a46a" opacity=".7"/>
-      <circle cx="190" cy="120" r="16" fill="#7aa35a"/><circle cx="200" cy="140" r="13" fill="#5d8a45"/><circle cx="180" cy="142" r="11" fill="#8fb86b"/>
-      <path d="M100 190 q50 30 100 0" stroke="#b5462f" stroke-width="10" fill="none" stroke-linecap="round"/>
-      <circle cx="160" cy="185" r="7" fill="#e8c547"/><circle cx="140" cy="196" r="6" fill="#e8c547"/></svg>
+  <div class="hero-media"><img src="img/hero-1920.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1024w, img/hero-1920.webp 1920w" sizes="100vw" alt="Wnętrze bistro wieczorem: zielone ściany, miedziane lampy, nakryte stoły" fetchpriority="high"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow" style="color:#e2ad7c">Bistro · kuchnia sezonowa · od 9:00</p>
+    <h1 data-split>Proste jedzenie, zrobione <em>porządnie.</em></h1>
+    <p class="lead" data-reveal style="--d:300ms">Domowe obiady, chleb na zakwasie z własnego pieca i wino od małych winiarzy. Zajrzyj na śniadanie, zostań na kolację.</p>
+    <div data-reveal style="--d:450ms;display:flex;gap:12px;flex-wrap:wrap"><a href="#rezerwacja" class="btn">Zarezerwuj stolik <span class="arr">→</span></a><a href="#karta" class="btn light">Zobacz kartę</a></div>
+    <div class="hero-meta" data-reveal style="--d:600ms">
+      <div><span id="openNow" class="open-dot">Sprawdzam…</span><b id="openHours">&nbsp;</b></div>
+      <div>Adres<b>[ul. Przykładowa 1, Miasto]</b></div>
+      <div>Telefon<b>[+48 000 000 000]</b></div>
     </div>
-    <span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span>
   </div>
+  <div class="scroll-cue">Przewiń</div>
 </section>
 
-<section id="karta" class="wrap">
-  <h2>Karta</h2><p class="sub">Ceny przykładowe w fikcyjnym lokalu.</p>
-  <div class="tabs" role="tablist">
-    <button class="on" data-c="sniadania">Śniadania</button><button data-c="obiady">Obiady</button><button data-c="desery">Desery</button><button data-c="napoje">Napoje</button>
-  </div>
-  <ul class="menu" id="menuList">
-    <li data-c="sniadania"><div><h3>Jajecznica na maśle</h3><p>trzy jaja, szczypiorek, pieczywo na zakwasie</p></div><b>24 zł</b></li>
-    <li data-c="sniadania"><div><h3>Owsianka sezonowa</h3><p>owoce z sezonu, orzechy, miód</p></div><b>21 zł</b></li>
-    <li data-c="sniadania"><div><h3>Tosty z awokado</h3><p>jajko w koszulce, rzodkiewka, kiełki</p></div><b>29 zł</b></li>
-    <li data-c="obiady"><div><h3>Pierogi ruskie</h3><p>8 sztuk, cebulka, śmietana</p></div><b>32 zł</b></li>
-    <li data-c="obiady"><div><h3>Kotlet schabowy</h3><p>ziemniaki z koperkiem, mizeria</p></div><b>42 zł</b></li>
-    <li data-c="obiady"><div><h3>Krem z dyni</h3><p>pestki, olej dyniowy, grzanki</p></div><b>22 zł</b><span class="veg">wege</span></li>
-    <li data-c="obiady"><div><h3>Risotto z grzybami</h3><p>leśne grzyby, parmezan, tymianek</p></div><b>45 zł</b><span class="veg">wege</span></li>
-    <li data-c="desery"><div><h3>Szarlotka na ciepło</h3><p>gałka lodów waniliowych</p></div><b>19 zł</b></li>
-    <li data-c="desery"><div><h3>Sernik baskijski</h3><p>sos z owoców leśnych</p></div><b>21 zł</b></li>
-    <li data-c="napoje"><div><h3>Kawa przelewowa</h3><p>ziarno z lokalnej palarni</p></div><b>14 zł</b></li>
-    <li data-c="napoje"><div><h3>Lemoniada domowa</h3><p>cytryna, mięta, miód</p></div><b>15 zł</b></li>
-    <li data-c="napoje"><div><h3>Kompot z owoców</h3><p>jak u babci, dzbanek 1 l</p></div><b>18 zł</b></li>
-  </ul>
-</section>
-
-<section id="galeria" class="wrap">
-  <h2>Galeria</h2><p class="sub">Ilustracje poglądowe. Kliknij, żeby powiększyć.</p>
-  <div class="gal">
-    <button class="g g1" data-t="Pierogi ruskie"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#e9dcc6"/><circle cx="100" cy="78" r="58" fill="#fff"/><g fill="#f1d9a8" stroke="#d9b77a" stroke-width="2"><path d="M60 80 q20-35 40 0z"/><path d="M95 70 q20-35 40 0z"/><path d="M75 100 q20-35 40 0z"/></g><circle cx="88" cy="60" r="4" fill="#7aa35a"/><circle cx="118" cy="92" r="4" fill="#7aa35a"/></svg></button>
-    <button class="g g2" data-t="Krem z dyni"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#234a3a"/><circle cx="100" cy="75" r="55" fill="#f5ead8"/><circle cx="100" cy="75" r="42" fill="#e08a32"/><path d="M80 70 q20 15 40 0" stroke="#f5ead8" stroke-width="4" fill="none"/><circle cx="110" cy="85" r="3" fill="#3d6b2e"/><circle cx="92" cy="88" r="3" fill="#3d6b2e"/></svg></button>
-    <button class="g g3" data-t="Sernik baskijski"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#f3c9b6"/><path d="M50 100 L100 50 L150 100 Z" fill="#f6e1b0"/><path d="M50 100 L100 50 L150 100 L150 112 L50 112Z" fill="#c8793d" opacity=".25"/><path d="M50 100 L150 100" stroke="#8a4a22" stroke-width="5"/><circle cx="95" cy="72" r="6" fill="#7a2240"/><circle cx="108" cy="80" r="5" fill="#3a2a6a"/></svg></button>
-    <button class="g g4" data-t="Kawa przelewowa"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#c8793d"/><rect x="70" y="55" width="55" height="60" rx="8" fill="#f5ead8"/><path d="M125 70 q22 0 0 28" stroke="#f5ead8" stroke-width="7" fill="none"/><ellipse cx="97" cy="58" rx="25" ry="5" fill="#4a2a17"/><path d="M88 45 q6-10 0-20 M104 45 q6-10 0-20" stroke="#fff" stroke-width="3" fill="none" opacity=".7"/></svg></button>
-    <button class="g g5" data-t="Sala"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#f5ead8"/><rect x="0" y="105" width="200" height="45" fill="#d8c4a2"/><rect x="30" y="20" width="50" height="60" rx="25" fill="#bcd3e0"/><rect x="120" y="20" width="50" height="60" rx="25" fill="#bcd3e0"/><rect x="40" y="90" width="120" height="8" rx="3" fill="#8a5a33"/><rect x="55" y="98" width="6" height="30" fill="#8a5a33"/><rect x="140" y="98" width="6" height="30" fill="#8a5a33"/><path d="M98 20 v20" stroke="#333" stroke-width="2"/><circle cx="98" cy="45" r="8" fill="#e8c547"/></svg></button>
-    <button class="g g6" data-t="Lemoniada"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#dbe8c8"/><path d="M75 35 h50 l-6 85 h-38z" fill="#fffbe0" stroke="#9ab86f" stroke-width="3"/><circle cx="100" cy="70" r="14" fill="#f2d84b"/><circle cx="100" cy="70" r="9" fill="#fbe98a"/><path d="M110 30 l15-15" stroke="#5d8a45" stroke-width="4"/></svg></button>
-  </div>
-</section>
-
-<section id="godziny" class="wrap split">
-  <div><h2>Godziny otwarcia</h2>
-    <table class="hours" id="hours"><tbody>
-      <tr data-d="1"><td>Poniedziałek</td><td>nieczynne</td></tr><tr data-d="2"><td>Wtorek</td><td>11:00 – 21:00</td></tr><tr data-d="3"><td>Środa</td><td>11:00 – 21:00</td></tr><tr data-d="4"><td>Czwartek</td><td>11:00 – 21:00</td></tr><tr data-d="5"><td>Piątek</td><td>11:00 – 23:00</td></tr><tr data-d="6"><td>Sobota</td><td>9:00 – 23:00</td></tr><tr data-d="0"><td>Niedziela</td><td>9:00 – 20:00</td></tr>
-    </tbody></table></div>
-  <div><h2>Dojazd</h2><div class="map"><svg viewBox="0 0 400 260" aria-hidden="true"><rect width="400" height="260" fill="#e9e2d2"/><path d="M0 180 L400 120" stroke="#fff" stroke-width="22"/><path d="M140 0 L190 260" stroke="#fff" stroke-width="16"/><path d="M0 60 L400 40" stroke="#fff" stroke-width="10"/><rect x="250" y="160" width="90" height="60" fill="#c9d9b6"/></svg><div class="pin">📍</div><p>[Mapa Google – do osadzenia]<br>[ul. Przykładowa 1, 00-000 Miasto]</p></div></div>
-</section>
-
-<section id="rezerwacja" class="wrap narrow">
-  <h2>Zarezerwuj stolik</h2><p class="sub">Formularz demonstracyjny, rezerwacja nie jest nigdzie wysyłana.</p>
-  <form id="res" class="card" novalidate>
-    <div class="grid2">
-      <label>Imię<input name="n" required></label>
-      <label>Telefon<input name="t" type="tel" required placeholder="[000 000 000]"></label>
-      <label>Data<input name="d" type="date" required id="date"></label>
-      <label>Godzina<select name="h" id="hour" required></select></label>
+<section class="section intro" id="o-nas">
+  <div class="container intro-grid">
+    <div>
+      <p class="eyebrow">Nasza historia</p>
+      <h2 class="h2" data-split>Kuchnia, która pachnie <em>jak w domu</em></h2>
+      <p class="lead" data-reveal>Smakownia Kasztan to fikcyjne bistro stworzone na potrzeby prezentacji. Wyobraź sobie miejsce, w którym rano pachnie świeżym chlebem, w południe parują talerze zupy, a wieczorem przy świecach otwiera się butelkę wina.</p>
+      <p class="muted" data-reveal style="margin-top:18px">Gotujemy z tego, co akurat jest w sezonie, od lokalnych dostawców. Karta zmienia się co kilka tygodni, a pierogi lepimy codziennie ręcznie.</p>
+      <div class="pillars" data-stagger>
+        <div><b>Sezonowo</b><span>karta zmienia się z porami roku</span></div>
+        <div><b>Lokalnie</b><span>warzywa, mięso i nabiał z okolicy</span></div>
+        <div><b>Na zakwasie</b><span>pieczywo z własnego pieca</span></div>
+      </div>
     </div>
-    <div class="people"><span>Liczba osób</span><button type="button" id="minus" aria-label="Mniej">−</button><output id="ppl">2</output><button type="button" id="plus" aria-label="Więcej">+</button><span class="tbl" id="tbl"></span></div>
-    <label>Uwagi (opcjonalnie)<textarea name="u" rows="3" placeholder="np. krzesełko dla dziecka"></textarea></label>
-    <button class="btn" type="submit">Zarezerwuj</button>
-  </form>
-  <div class="card done" id="done" hidden><div class="ok">✓</div><h3>Stolik czeka!</h3><p id="doneTxt"></p><p class="small">To wersja demo, nic nie zostało wysłane.</p></div>
+    <div class="intro-media">
+      <figure class="parallax-wrap tall" data-reveal="img"><img data-parallax=".12" src="img/bread.webp" srcset="img/bread-640.webp 640w, img/bread.webp 1024w" sizes="(max-width:900px) 100vw, 45vw" alt="Bochenki chleba na zakwasie na desce" loading="lazy"></figure>
+      <figure class="intro-small" data-reveal="img"><img src="img/coffee-640.webp" alt="Kawa parzona metodą przelewową" loading="lazy"></figure>
+    </div>
+  </div>
 </section>
 
-<footer><div><b>Smakownia Kasztan</b><br>[ul. Przykładowa 1, 00-000 Miasto]<br>☎ [+48 000 000 000] · ✉ [kontakt@przyklad.pl]</div><p class="demo">Projekt demonstracyjny <a href="../../" >Klikoo</a> · lokal, dania i ceny są fikcyjne</p></footer>
-<div class="lightbox" id="lb" hidden><button aria-label="Zamknij">×</button><div id="lbImg"></div><p id="lbT"></p></div>
-<script src="main.js"></script></body></html>
+<section class="section specials" id="dzis">
+  <div class="container">
+    <div class="sec-head"><div><p class="eyebrow">Dania dnia</p><h2 class="h2" data-split>Dziś polecamy</h2></div><p class="muted" id="todayLabel"></p></div>
+    <div class="spec-grid" id="specials" data-stagger></div>
+  </div>
+</section>
+
+<section class="section menu-sec" id="karta">
+  <div class="container">
+    <div class="sec-head"><div><p class="eyebrow">Karta</p><h2 class="h2" data-split>Co dziś <em>zjemy?</em></h2></div><p class="muted">Ceny przykładowe (lokal fikcyjny). Kliknij danie, by zobaczyć szczegóły i alergeny.</p></div>
+    <div class="menu-tools">
+      <div class="tabs" role="tablist" aria-label="Kategorie karty" id="cats"></div>
+      <div class="diet" aria-label="Filtry diety"><label><input type="checkbox" value="v"> Wege</label><label><input type="checkbox" value="gf"> Bez glutenu</label><input type="search" id="q" placeholder="Szukaj w karcie…" aria-label="Szukaj w karcie"></div>
+    </div>
+    <ul class="menu-list" id="menuList" aria-live="polite"></ul>
+    <p class="allergen-legend" id="legend"></p>
+  </div>
+</section>
+
+<section class="section wine" id="wino">
+  <div class="wine-bg parallax-wrap" aria-hidden="true"><img data-parallax=".18" src="img/wine.webp" alt="" loading="lazy"></div>
+  <div class="container wine-grid">
+    <div>
+      <p class="eyebrow" style="color:#e2ad7c">Wino do dania</p>
+      <h2 class="h2" data-split>Dobierzemy kieliszek <em>za ciebie</em></h2>
+      <p class="lead" style="color:#ffffffbb" data-reveal>Wybierz danie, a podpowiemy, jakie wino do niego pasuje. Propozycje są przykładowe.</p>
+      <div class="pair-pick" id="pairPick" role="radiogroup" aria-label="Wybierz danie"></div>
+    </div>
+    <div class="pair-card" id="pairCard" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="section gallery" id="galeria">
+  <div class="container">
+    <div class="sec-head"><div><p class="eyebrow">Galeria</p><h2 class="h2" data-split>Zajrzyj do <em>środka</em></h2></div><p class="muted">Zdjęcia poglądowe (wygenerowane na potrzeby demo). Kliknij, by powiększyć; na telefonie przesuwaj palcem.</p></div>
+    <div class="masonry" data-stagger id="gal"></div>
+  </div>
+</section>
+
+<section class="section team" id="zespol">
+  <div class="container">
+    <div class="sec-head"><div><p class="eyebrow">Zespół</p><h2 class="h2" data-split>Ludzie od <em>smaku</em></h2></div><p class="muted">Osoby fikcyjne, zdjęcia wygenerowane na potrzeby prezentacji.</p></div>
+    <div class="team-grid">
+      <article class="person" data-reveal><figure><img src="img/chef.webp" srcset="img/chef-640.webp 640w, img/chef.webp 1024w" sizes="(max-width:800px) 100vw, 50vw" alt="Szef kuchni w zielonym fartuchu" loading="lazy"></figure><div><h3>Marek Lipa</h3><p class="role">Szef kuchni · postać fikcyjna</p><p class="muted">„Najlepsze danie to takie, przy którym nikt nie rozmawia, bo wszyscy jedzą.”</p></div></article>
+      <article class="person" data-reveal style="--d:120ms"><figure><img src="img/manager.webp" srcset="img/manager-640.webp 640w, img/manager.webp 1024w" sizes="(max-width:800px) 100vw, 50vw" alt="Uśmiechnięta kierowniczka sali" loading="lazy"></figure><div><h3>Ola Brzozowska</h3><p class="role">Sala i wino · postać fikcyjna</p><p class="muted">Dobierze wino, zapamięta twój ulubiony stolik i zorganizuje przyjęcie.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews-sec">
+  <div class="container">
+    <p class="eyebrow">Opinie</p>
+    <span class="label-demo">Przykładowe opinie · fikcyjne, do zastąpienia prawdziwymi</span>
+    <div class="reviews" style="margin-top:34px">
+      <div class="rv-track">
+        <div class="rv-item"><div class="stars" aria-label="5 na 5">★★★★★</div><blockquote>„Pierogi jak u babci, tylko lepiej podane. Wrócimy na kolację z winem.”</blockquote><cite>— przykładowa opinia</cite></div>
+        <div class="rv-item"><div class="stars" aria-label="5 na 5">★★★★★</div><blockquote>„Świetna obsługa, spokojny klimat, a sernik baskijski to obowiązek.”</blockquote><cite>— przykładowa opinia</cite></div>
+        <div class="rv-item"><div class="stars" aria-label="4 na 5">★★★★☆</div><blockquote>„Robiliśmy tu kolację firmową i wszystko było dopięte na ostatni guzik.”</blockquote><cite>— przykładowa opinia</cite></div>
+      </div>
+      <div class="rv-dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section events" id="wydarzenia">
+  <div class="container ev-grid">
+    <figure class="parallax-wrap ev-img" data-reveal="img"><img data-parallax=".1" src="img/event.webp" srcset="img/event-640.webp 640w, img/event.webp 1024w" sizes="(max-width:900px) 100vw, 55vw" alt="Długi stół nakryty na przyjęcie, świece i zieleń" loading="lazy"></figure>
+    <div>
+      <p class="eyebrow">Wydarzenia i catering</p>
+      <h2 class="h2" data-split>Twoje przyjęcie, <em>nasza kuchnia</em></h2>
+      <p class="muted" data-reveal>Urodziny, chrzciny, kolacje firmowe, catering na wynos. Sala na 12–40 osób (przykład). Zostaw zapytanie, przygotujemy ofertę.</p>
+      <form class="ev-form" data-demo-form="Zapytanie zapisane (demo, nic nie zostało wysłane). Odezwiemy się z ofertą." novalidate data-reveal>
+        <div class="seg" role="radiogroup" aria-label="Rodzaj wydarzenia"><label><input type="radio" name="t" checked> Przyjęcie w lokalu</label><label><input type="radio" name="t"> Catering</label><label><input type="radio" name="t"> Kolacja firmowa</label></div>
+        <div class="row2"><label class="field">Liczba gości<input type="number" min="6" max="120" value="20" required></label><label class="field">Data<input type="date" required></label></div>
+        <div class="row2"><label class="field">Imię i nazwisko<input required autocomplete="name"></label><label class="field">E-mail<input type="email" required autocomplete="email"></label></div>
+        <label class="field">Kilka słów o wydarzeniu<textarea rows="3"></textarea></label>
+        <button class="btn" type="submit">Wyślij zapytanie <span class="arr">→</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section gift" id="voucher">
+  <div class="container gift-grid">
+    <div>
+      <p class="eyebrow">Karta podarunkowa</p>
+      <h2 class="h2" data-split>Podaruj <em>kolację</em></h2>
+      <p class="muted" data-reveal>Skonfiguruj voucher. W prawdziwym serwisie można by go kupić online; tutaj to tylko podgląd.</p>
+      <div class="gift-opts" data-reveal>
+        <div class="seg" id="giftAmt" role="radiogroup" aria-label="Kwota"><label><input type="radio" name="a" value="100"> 100 zł</label><label><input type="radio" name="a" value="200" checked> 200 zł</label><label><input type="radio" name="a" value="300"> 300 zł</label><label><input type="radio" name="a" value="500"> 500 zł</label></div>
+        <label class="field">Dla kogo?<input id="giftTo" maxlength="28" placeholder="np. Dla Ani"></label>
+        <button class="btn" id="giftBtn" type="button">Zamów voucher (demo)</button>
+      </div>
+    </div>
+    <div class="voucher" id="voucherCard" aria-live="polite">
+      <div class="v-top"><span>Smakownia Kasztan</span><span>Karta podarunkowa</span></div>
+      <div class="v-amt" id="vAmt">200 zł</div>
+      <div class="v-to" id="vTo">Dla Ciebie</div>
+      <div class="v-bot"><span>Nr [XXXX-XXXX]</span><span>ważna 12 mies. · przykład</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section booking" id="rezerwacja">
+  <div class="container bk-wrap">
+    <div class="bk-side">
+      <p class="eyebrow">Rezerwacja</p>
+      <h2 class="h2" data-split>Zarezerwuj <em>stolik</em></h2>
+      <p class="muted">Cztery krótkie kroki. Formularz demonstracyjny, rezerwacja nigdzie nie trafia.</p>
+      <ul class="hours-list" id="hoursList"></ul>
+    </div>
+    <div class="bk" id="bk">
+      <ol class="bk-labels"><li>Goście</li><li>Termin</li><li>Dane</li><li>Gotowe</li></ol>
+      <div class="bk-bar"><i></i></div>
+      <div class="bk-step">
+        <h3 class="bk-h">Ile osób i z jakiej okazji?</h3>
+        <div class="stepper"><button type="button" id="gMinus" aria-label="Mniej osób">−</button><output id="guests">2</output><button type="button" id="gPlus" aria-label="Więcej osób">+</button><span class="muted">osoby</span></div>
+        <div class="seg" id="occasion" role="radiogroup" aria-label="Okazja"><label><input type="radio" name="o" value="Bez okazji" checked> Bez okazji</label><label><input type="radio" name="o" value="Urodziny"> Urodziny</label><label><input type="radio" name="o" value="Randka"> Randka</label><label><input type="radio" name="o" value="Spotkanie biznesowe"> Biznes</label></div>
+        <div class="seg" id="zone" role="radiogroup" aria-label="Strefa"><label><input type="radio" name="z" value="Sala" checked> Sala</label><label><input type="radio" name="z" value="Przy oknie"> Przy oknie</label><label><input type="radio" name="z" value="Ogródek"> Ogródek (sezon)</label></div>
+        <div class="bk-nav"><span></span><button class="btn" type="button" data-next>Dalej <span class="arr">→</span></button></div>
+      </div>
+      <div class="bk-step" hidden>
+        <h3 class="bk-h">Wybierz dzień i godzinę</h3>
+        <div class="bk-dt"><div class="cal"></div><div><p class="muted small" id="slotHint">Najpierw wybierz dzień.</p><div class="slots"></div></div></div>
+        <div class="bk-nav"><button class="btn ghost" type="button" data-prev>← Wstecz</button><button class="btn" type="button" data-next>Dalej <span class="arr">→</span></button></div>
+      </div>
+      <div class="bk-step" hidden>
+        <h3 class="bk-h">Twoje dane</h3>
+        <form id="bkForm" novalidate class="row2">
+          <label class="field">Imię i nazwisko<input name="n" required autocomplete="name"></label>
+          <label class="field">Telefon<input name="t" type="tel" required autocomplete="tel" placeholder="[000 000 000]"></label>
+          <label class="field" style="grid-column:1/-1">E-mail<input name="e" type="email" required autocomplete="email"></label>
+          <label class="field" style="grid-column:1/-1">Uwagi (alergie, krzesełko dla dziecka)<textarea name="u" rows="2"></textarea></label>
+          <label class="check" style="grid-column:1/-1"><input type="checkbox" required> Akceptuję, że to formularz demonstracyjny i dane nie zostaną nigdzie wysłane.</label>
+        </form>
+        <div class="bk-nav"><button class="btn ghost" type="button" data-prev>← Wstecz</button><button class="btn" type="button" data-next>Potwierdź rezerwację</button></div>
+      </div>
+      <div class="bk-step" hidden>
+        <div class="done-ic" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 27l7 7 15-16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="bk-h">Stolik czeka!</h3>
+        <dl class="summary" id="bkSum"></dl>
+        <p class="muted small" style="margin-top:20px">To wersja demonstracyjna: nic nie zostało wysłane, a stolik nie jest naprawdę zarezerwowany.</p>
+        <div class="bk-nav"><span></span><button class="btn ghost" type="button" id="bkAgain">Nowa rezerwacja</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq-sec" id="faq">
+  <div class="container faq-grid">
+    <div><p class="eyebrow">FAQ</p><h2 class="h2" data-split>Dobrze <em>wiedzieć</em></h2></div>
+    <div class="faq">
+      <details><summary>Czy macie dania wegetariańskie i bezglutenowe?</summary><p>Tak, w karcie oznaczamy je ikonami. Użyj filtrów „Wege” i „Bez glutenu”, żeby zobaczyć tylko takie pozycje.</p></details>
+      <details><summary>Czy można przyjść z psem?</summary><p>W ogródku jak najbardziej. Na sali prosimy o wcześniejszy kontakt (przykładowa zasada).</p></details>
+      <details><summary>Czy przyjmujecie rezerwacje dla dużych grup?</summary><p>Grupy powyżej 10 osób najlepiej zgłaszać przez formularz wydarzeń. Przygotujemy menu i ofertę.</p></details>
+      <details><summary>Czy jest parking?</summary><p>[Informacja o parkingu do uzupełnienia].</p></details>
+      <details><summary>Czy można zamówić na wynos?</summary><p>Tak, większość dań z karty przygotujemy na wynos. Zadzwoń: [+48 000 000 000].</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="kontakt">
+  <div class="container contact-grid">
+    <div>
+      <p class="eyebrow">Kontakt i dojazd</p>
+      <h2 class="h2" data-split>Do <em>zobaczenia</em></h2>
+      <ul class="contact-list">
+        <li><span>Adres</span>[ul. Przykładowa 1, 00-000 Miasto]</li>
+        <li><span>Telefon</span>[+48 000 000 000]</li>
+        <li><span>E-mail</span>[kontakt@przyklad.pl]</li>
+        <li><span>Godziny</span>Wt–Czw 11–21 · Pt 11–23 · Sob 9–23 · Nd 9–20 · Pon nieczynne</li>
+      </ul>
+    </div>
+    <div class="map" role="img" aria-label="Miejsce na mapę Google (placeholder)">
+      <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice"><rect width="600" height="400" fill="var(--soft)"/><g stroke="var(--card)" fill="none"><path d="M-10 260 L620 170" stroke-width="26"/><path d="M200 -10 L270 410" stroke-width="18"/><path d="M-10 80 L620 60" stroke-width="10"/><path d="M420 -10 L380 410" stroke-width="10"/><path d="M-10 350 Q300 300 620 380" stroke-width="8"/></g><rect x="300" y="250" width="90" height="70" rx="6" fill="var(--acc)" opacity=".12"/><rect x="60" y="110" width="110" height="60" rx="6" fill="var(--acc)" opacity=".08"/></svg>
+      <span class="ping"></span><span class="pin"></span>
+      <div class="map-cap"><b>Smakownia Kasztan</b><br>[Mapa Google – do osadzenia]</div>
+    </div>
+  </div>
+</section>
+
+<section class="insta-sec" aria-label="Instagram (przykład)">
+  <div class="container insta-head"><p class="eyebrow">@smakowniakasztan · przykładowy profil</p></div>
+  <div class="insta" id="insta"></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div><a href="#top" class="brand" style="opacity:1">Smakownia <i>Kasztan</i></a><p style="opacity:.7;margin-top:14px;max-width:32ch">Fikcyjne bistro z kuchnią sezonową. Strona przygotowana jako projekt demonstracyjny.</p></div>
+      <div><h4>Odwiedź nas</h4><ul><li>[ul. Przykładowa 1]</li><li>[00-000 Miasto]</li><li>[+48 000 000 000]</li></ul></div>
+      <div><h4>Na skróty</h4><ul><li><a href="#karta">Karta</a></li><li><a href="#rezerwacja">Rezerwacja</a></li><li><a href="#wydarzenia">Wydarzenia</a></li><li><a href="#voucher">Vouchery</a></li></ul></div>
+      <div><h4>Newsletter</h4><p style="opacity:.7;font-size:.9rem">Nowa karta i wydarzenia raz w miesiącu.</p><form class="news" data-demo-form="Zapisano do newslettera (demo, nic nie zostało wysłane)." novalidate><input type="email" required placeholder="Twój e-mail" aria-label="E-mail do newslettera"><button aria-label="Zapisz">→</button></form></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Smakownia Kasztan · [dane firmy]</span><span>Projekt demonstracyjny <a href="../../">Klikoo</a> · lokal, osoby, opinie i ceny są fikcyjne</span></div>
+  </div>
+</footer>
+
+<div class="cookie" role="dialog" aria-label="Pliki cookies"><b>🍪 Ciasteczka</b><p>Ta demonstracyjna strona nie używa śledzących cookies. Zapamiętujemy tylko Twój wybór i tryb kolorów.</p><div class="row"><button class="btn" data-cookie="all">W porządku</button><button class="btn ghost" data-cookie="min">Tylko niezbędne</button></div></div>
+
+<script src="kit.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,81 +1,271 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Studio Loka · salon fryzjerski (projekt demonstracyjny)</title>
-<meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%23161314'/><path d='M30 70 Q50 10 70 70' stroke='%23e9b8a8' stroke-width='10' fill='none'/></svg>">
-<link rel="stylesheet" href="style.css"></head><body>
-<div class="demo-bar">Projekt demonstracyjny Klikoo · fikcyjny salon</div>
-<header class="nav"><a href="#top" class="brand">studio<b>loka</b></a>
-<nav id="menu"><a href="#uslugi">Usługi</a><a href="#efekty">Efekty</a><a href="#galeria">Galeria</a><a href="#kontakt">Kontakt</a><a href="#rezerwacja" class="btn sm">Umów wizytę</a></nav>
-<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button></header>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Loka · salon fryzjerski | projekt demonstracyjny</title>
+<meta name="description" content="Studio Loka – fikcyjny salon fryzjerski: strzyżenie, koloryzacja, balayage. Projekt demonstracyjny studia Klikoo.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2b2220">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Studio Loka · salon fryzjerski (demo Klikoo)">
+<meta property="og:description" content="Strzyżenie, koloryzacja i balayage. Rezerwacja online w 4 krokach. Projekt demonstracyjny.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='32' fill='%232b2220'/><text x='32' y='44' font-family='Georgia' font-style='italic' font-size='36' text-anchor='middle' fill='%23f0c2ae'>L</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-1920.webp" imagesrcset="img/hero-640.webp 640w, img/hero.webp 1024w, img/hero-1920.webp 1920w" imagesizes="100vw">
+<link rel="stylesheet" href="kit.css"><link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HairSalon","name":"Studio Loka (projekt demonstracyjny)","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"[ul. Przykładowa 5]","addressLocality":"[Miasto]"}}</script>
+</head>
+<body class="has-hero">
+<a href="#main" class="skip">Przejdź do treści</a>
+<div class="demo-note">Projekt demonstracyjny Klikoo · fikcyjny salon, ceny przykładowe</div>
 
-<section class="hero" id="top">
-  <div class="hero-txt">
-    <p class="eyebrow">Salon fryzjerski</p>
-    <h1><span class="sw" id="sw">Cięcie.</span><br>Kolor. Ty.</h1>
-    <p>Fryzury dopasowane do ciebie, nie do trendu. Konsultacja przed każdą usługą, spokojna atmosfera i dobra kawa.</p>
-    <a href="#rezerwacja" class="btn">Umów wizytę online</a>
-  </div>
-  <div class="hero-art" aria-hidden="true">
-    <div class="ring"></div>
-    <svg class="head" viewBox="0 0 300 340"><path d="M60 170 Q55 40 150 35 Q250 40 240 175 Q245 260 200 300 L100 300 Q55 260 60 170Z" fill="#3a2a2b" class="hair"/><ellipse cx="150" cy="175" rx="70" ry="88" fill="#f1cdb8"/><path d="M80 150 Q100 70 190 90 Q230 110 225 160 Q200 110 140 115 Q100 120 80 150Z" fill="#3a2a2b" class="hair"/><circle cx="125" cy="180" r="5" fill="#3a2a2b"/><circle cx="175" cy="180" r="5" fill="#3a2a2b"/><path d="M135 222 q15 10 30 0" stroke="#c46f6f" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="125" y="255" width="50" height="50" fill="#f1cdb8"/><path d="M60 340 Q150 270 240 340Z" fill="#e9b8a8"/></svg>
-    <svg class="scissors" viewBox="0 0 100 100"><circle cx="25" cy="72" r="13" fill="none" stroke="#d8b26e" stroke-width="6"/><circle cx="25" cy="30" r="13" fill="none" stroke="#d8b26e" stroke-width="6"/><path d="M36 64 L92 38 M36 38 L92 64" stroke="#d8b26e" stroke-width="6" stroke-linecap="round"/></svg>
-    <div class="swatches"><button style="--c:#3a2a2b" aria-label="Brąz" class="on"></button><button style="--c:#b0603a" aria-label="Miedź"></button><button style="--c:#d9b46a" aria-label="Blond"></button><button style="--c:#8a6ad8" aria-label="Fiolet"></button><button style="--c:#d86a8f" aria-label="Róż"></button></div>
-  </div>
-</section>
-
-<section id="uslugi" class="wrap">
-  <h2>Usługi i ceny</h2><p class="sub">Ceny przykładowe w fikcyjnym salonie.</p>
-  <div class="seg"><button class="on" data-f="all">Wszystkie</button><button data-f="d">Damskie</button><button data-f="m">Męskie</button><button data-f="k">Koloryzacja</button></div>
-  <div class="svc" id="svc">
-    <div class="s" data-f="d"><div><h3>Strzyżenie damskie</h3><p>mycie, strzyżenie, modelowanie · ok. 60 min</p></div><b>od 90 zł</b></div>
-    <div class="s" data-f="d"><div><h3>Modelowanie</h3><p>mycie i stylizacja · ok. 40 min</p></div><b>od 60 zł</b></div>
-    <div class="s" data-f="d"><div><h3>Upięcie okolicznościowe</h3><p>na wesele, studniówkę · ok. 75 min</p></div><b>od 150 zł</b></div>
-    <div class="s" data-f="m"><div><h3>Strzyżenie męskie</h3><p>maszynka i nożyczki · ok. 40 min</p></div><b>od 55 zł</b></div>
-    <div class="s" data-f="m"><div><h3>Strzyżenie + broda</h3><p>trymowanie, konturowanie · ok. 60 min</p></div><b>od 85 zł</b></div>
-    <div class="s" data-f="k"><div><h3>Koloryzacja jednolita</h3><p>farbowanie całości · ok. 120 min</p></div><b>od 180 zł</b></div>
-    <div class="s" data-f="k"><div><h3>Baleyage / sombre</h3><p>naturalne rozjaśnienia · ok. 180 min</p></div><b>od 350 zł</b></div>
-    <div class="s" data-f="d k"><div><h3>Regeneracja włosów</h3><p>zabieg odbudowujący · ok. 45 min</p></div><b>od 120 zł</b></div>
-  </div>
-</section>
-
-<section id="efekty" class="wrap">
-  <h2>Przed i po</h2><p class="sub">Ilustracja poglądowa. Przeciągnij suwak.</p>
-  <div class="ba" id="ba">
-    <svg class="before" viewBox="0 0 600 360"><rect width="600" height="360" fill="#e7dcd6"/><g transform="translate(300 40)"><path d="M-110 120 Q-140 -20 0 -20 Q140 -20 110 120 Q130 220 150 320 L-150 320 Q-130 220 -110 120Z" fill="#8a7466"/><path d="M-120 40 L-160 10 M120 40 L165 15 M-90 0 L-120 -40 M100 5 L130 -30" stroke="#8a7466" stroke-width="12" stroke-linecap="round"/><ellipse cx="0" cy="130" rx="70" ry="88" fill="#f1cdb8"/><circle cx="-25" cy="135" r="5" fill="#3a2a2b"/><circle cx="25" cy="135" r="5" fill="#3a2a2b"/><path d="M-15 180 h30" stroke="#c46f6f" stroke-width="5" stroke-linecap="round"/></g><text x="24" y="40" font-family="system-ui" font-weight="700" fill="#6b5a52">PRZED</text></svg>
-    <div class="after" id="after"><svg viewBox="0 0 600 360"><rect width="600" height="360" fill="#f6e3dc"/><g transform="translate(300 40)"><path d="M-95 130 Q-110 -10 0 -15 Q110 -10 95 130 Q100 190 80 220 L-80 220 Q-100 190 -95 130Z" fill="#b0603a"/><path d="M-70 60 Q-20 0 80 40 Q60 10 0 5 Q-60 10 -70 60Z" fill="#d9b46a" opacity=".7"/><ellipse cx="0" cy="130" rx="70" ry="88" fill="#f1cdb8"/><path d="M-72 100 Q-30 30 70 70 Q60 20 0 18 Q-65 25 -72 100Z" fill="#b0603a"/><circle cx="-25" cy="135" r="5" fill="#3a2a2b"/><circle cx="25" cy="135" r="5" fill="#3a2a2b"/><path d="M-15 175 q15 10 30 0" stroke="#c46f6f" stroke-width="5" fill="none" stroke-linecap="round"/></g><text x="530" y="40" font-family="system-ui" font-weight="700" fill="#a0533a">PO</text></svg></div>
-    <div class="handle" id="handle"><span>⇆</span></div>
-    <input type="range" min="0" max="100" value="50" id="baR" aria-label="Porównaj przed i po">
-  </div>
-</section>
-
-<section id="galeria" class="wrap">
-  <h2>Galeria</h2><p class="sub">Ilustracje poglądowe fryzur.</p>
-  <div class="gal" id="gal"></div>
-</section>
-
-<section id="rezerwacja" class="wrap">
-  <h2>Umów wizytę</h2><p class="sub">Formularz demonstracyjny, rezerwacja nie jest nigdzie wysyłana.</p>
-  <div class="book">
-    <div class="steps">
-      <h4>1. Usługa</h4><div class="chips" id="bSvc"></div>
-      <h4>2. Dzień</h4><div class="days" id="bDay"></div>
-      <h4>3. Godzina</h4><div class="slots" id="bSlot"></div>
+<header class="nav">
+  <div class="container">
+    <a href="#top" class="brand" aria-label="Studio Loka – strona główna"><svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 12c0 10 2 16 12 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><b>Studio</b> <i>Loka</i></span></a>
+    <ul class="nav-links" id="menu">
+      <li><a href="#metamorfozy">Metamorfozy</a></li><li><a href="#cennik">Cennik</a></li><li><a href="#zespol">Zespół</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#voucher">Voucher</a></li><li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="icon-btn" data-theme-toggle aria-label="Przełącz tryb jasny/ciemny"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+      <a href="#rezerwacja" class="btn">Umów wizytę</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     </div>
-    <form class="sum" id="bForm" novalidate>
-      <h4>Podsumowanie</h4>
-      <dl><dt>Usługa</dt><dd id="sS">–</dd><dt>Termin</dt><dd id="sT">–</dd><dt>Cena</dt><dd id="sP">–</dd></dl>
-      <input name="n" placeholder="Imię" required aria-label="Imię"><input name="t" type="tel" placeholder="Telefon [000 000 000]" required aria-label="Telefon">
-      <button class="btn" type="submit">Rezerwuję</button><p class="hint" id="bHint"></p>
-    </form>
-    <div class="sum done" id="bDone" hidden><div class="ok">✂︎</div><h4>Do zobaczenia!</h4><p id="bDoneT"></p><p class="hint">To wersja demo, nic nie zostało wysłane.</p></div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-media"><img src="img/hero-1920.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1024w, img/hero-1920.webp 1920w" sizes="100vw" alt="Jasne wnętrze salonu fryzjerskiego z lustrami i fotelami" fetchpriority="high"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow" style="color:var(--acc-hero)">Salon fryzjerski · koloryzacja · barber</p>
+    <h1 data-split>Włosy, które czują się <em>jak Ty.</em></h1>
+    <p class="lead" data-reveal style="--d:300ms">Strzyżenie dopasowane do stylu życia, koloryzacja bez kompromisów i spokojna godzina tylko dla siebie.</p>
+    <div data-reveal style="--d:450ms;display:flex;gap:12px;flex-wrap:wrap"><a href="#rezerwacja" class="btn">Umów wizytę online <span class="arr">→</span></a><a href="#cennik" class="btn light">Policz koszt wizyty</a></div>
+    <div class="hero-meta" data-reveal style="--d:600ms">
+      <div>Godziny<b>Pn–Pt 9–20 · Sob 9–15</b></div>
+      <div>Adres<b>[ul. Przykładowa 5, Miasto]</b></div>
+      <div>Telefon<b>[+48 000 000 000]</b></div>
+    </div>
+  </div>
+  <div class="scroll-cue">Przewiń</div>
+</section>
+
+<section class="section intro" id="o-nas">
+  <div class="container intro-grid">
+    <div>
+      <p class="eyebrow">O salonie</p>
+      <h2 class="h2" data-split>Spokojne miejsce na <em>dobrą zmianę</em></h2>
+      <p class="lead" data-reveal>Studio Loka to fikcyjny salon stworzony na potrzeby prezentacji. Każda wizyta zaczyna się od rozmowy przy kawie: co lubisz, ile czasu masz rano i jak włosy mają wyglądać za dwa miesiące.</p>
+      <p class="muted" data-reveal style="margin-top:18px">Pracujemy na profesjonalnych kosmetykach, doradzamy pielęgnację domową i nie namawiamy na nic, czego nie chcesz.</p>
+      <div class="pillars" data-stagger>
+        <div><b>Konsultacja</b><span>gratis przed każdą usługą</span></div>
+        <div><b>Pielęgnacja</b><span>rytuał myjący w cenie</span></div>
+        <div><b>Bez pośpiechu</b><span>jedna klientka na stylistkę</span></div>
+      </div>
+    </div>
+    <div class="intro-media">
+      <figure class="parallax-wrap tall" data-reveal="img"><img data-parallax=".12" src="img/wash.webp" srcset="img/wash-640.webp 640w, img/wash.webp 1024w" sizes="(max-width:900px) 100vw, 45vw" alt="Mycie włosów przy umywalce w salonie" loading="lazy"></figure>
+      <div class="intro-small" data-reveal style="--d:200ms"><img src="img/tools-640.webp" alt="Nożyczki, grzebienie i szczotki na blacie" loading="lazy"></div>
+    </div>
   </div>
 </section>
 
-<section id="kontakt" class="wrap split">
-  <div><h2>Godziny</h2><ul class="hours"><li><span>Pon – Pt</span><span>9:00 – 19:00</span></li><li><span>Sobota</span><span>9:00 – 15:00</span></li><li><span>Niedziela</span><span>nieczynne</span></li></ul>
-    <p class="contact">☎ [+48 000 000 000]<br>✉ [kontakt@przyklad.pl]<br>📍 [ul. Przykładowa 2, 00-000 Miasto]</p></div>
-  <div class="map"><svg viewBox="0 0 400 280" aria-hidden="true"><rect width="400" height="280" fill="#2a2426"/><path d="M0 200 L400 140" stroke="#3d3537" stroke-width="22"/><path d="M160 0 L210 280" stroke="#3d3537" stroke-width="16"/><path d="M0 70 L400 50" stroke="#3d3537" stroke-width="10"/></svg><div class="pin"></div><p>[Mapa Google – do osadzenia]</p></div>
+<section class="section" id="metamorfozy" style="background:var(--card)">
+  <div class="container ba-grid">
+    <div class="ba" id="ba" data-reveal>
+      <img src="img/before.webp" alt="Włosy przed metamorfozą: długie, matowe, bez kształtu" draggable="false">
+      <img class="after" src="img/after.webp" alt="Włosy po metamorfozie: lśniące, cieniowane, z refleksami" draggable="false">
+      <span class="bar"></span><span class="knob" aria-hidden="true">⟷</span>
+      <span class="lbl l1">Przed</span><span class="lbl l2">Po</span>
+      <input type="range" min="0" max="100" value="50" aria-label="Porównaj zdjęcie przed i po">
+    </div>
+    <div>
+      <p class="eyebrow">Metamorfozy</p>
+      <h2 class="h2" data-split>Przesuń i zobacz <em>różnicę</em></h2>
+      <p class="muted" data-reveal>Przykładowa metamorfoza: cieniowanie, koloryzacja z karmelowymi refleksami i regenerujący rytuał. Czas: ok. 3 godziny. Zdjęcia poglądowe, wygenerowane na potrzeby demo.</p>
+      <div class="pillars" data-stagger style="grid-template-columns:repeat(3,1fr)">
+        <div><b>Strzyżenie</b><span>miękkie cieniowanie</span></div>
+        <div><b>Kolor</b><span>baby lights + toner</span></div>
+        <div><b>Rytuał</b><span>odbudowa keratynowa</span></div>
+      </div>
+      <p style="margin-top:30px" data-reveal><a href="#rezerwacja" class="btn">Chcę taką zmianę <span class="arr">→</span></a></p>
+    </div>
+  </div>
 </section>
 
-<footer><span class="brand">studio<b>loka</b></span><p>Projekt demonstracyjny <a href="../../">Klikoo</a> · salon, usługi i ceny są fikcyjne</p></footer>
-<script src="main.js"></script></body></html>
+<section class="section" id="cennik">
+  <div class="container">
+    <div class="sec-head"><div><p class="eyebrow">Cennik i kalkulator</p><h2 class="h2" data-split>Zaznacz usługi, <em>policzymy resztę</em></h2></div><p class="muted">Ceny przykładowe (salon fikcyjny). Wybierz długość włosów, a kalkulator pokaże koszt i czas wizyty.</p></div>
+    <div class="svc-grid">
+      <div id="svcList"></div>
+      <aside class="calc" aria-live="polite">
+        <h3>Twoja wizyta</h3>
+        <p class="muted small" style="margin-top:6px">Długość włosów</p>
+        <div class="seg len" id="hairLen" role="radiogroup" aria-label="Długość włosów"><label><input type="radio" name="len" value="0" checked> Krótkie</label><label><input type="radio" name="len" value="1"> Średnie</label><label><input type="radio" name="len" value="2"> Długie</label></div>
+        <ul id="calcList"></ul>
+        <div class="timeline" id="calcTl"></div>
+        <div class="tot"><div><span>Czas</span><b id="calcTime">0 min</b></div><div><span>Cena*</span><b id="calcPrice">0 zł</b></div></div>
+        <button class="btn" id="calcBook" type="button" style="width:100%;justify-content:center">Zarezerwuj te usługi <span class="arr">→</span></button>
+        <p class="muted" style="font-size:.75rem;margin-top:12px">* ceny przykładowe, ostateczna wycena po konsultacji</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="zespol" style="background:var(--card)">
+  <div class="container">
+    <div class="sec-head"><div><p class="eyebrow">Zespół</p><h2 class="h2" data-split>Wybierz swoją <em>stylistkę</em></h2></div><p class="muted">Osoby fikcyjne, zdjęcia wygenerowane na potrzeby prezentacji. Kliknij, by wybrać osobę do rezerwacji.</p></div>
+    <div class="stylists" id="stylists" data-stagger></div>
+  </div>
+</section>
+
+<section class="section gallery" id="galeria">
+  <div class="container">
+    <div class="sec-head"><div><p class="eyebrow">Galeria</p><h2 class="h2" data-split>Z naszego <em>fotela</em></h2></div><p class="muted">Zdjęcia poglądowe (wygenerowane na potrzeby demo). Kliknij, by powiększyć; na telefonie przesuwaj palcem.</p></div>
+    <div class="masonry" data-stagger id="gal"></div>
+  </div>
+</section>
+
+<section class="section reviews-sec">
+  <div class="container">
+    <p class="eyebrow">Opinie</p>
+    <span class="label-demo">Przykładowe opinie · fikcyjne, do zastąpienia prawdziwymi</span>
+    <div class="reviews" style="margin-top:34px">
+      <div class="rv-track">
+        <div class="rv-item"><div class="stars" aria-label="5 na 5">★★★★★</div><blockquote>„Pierwszy raz wyszłam od fryzjera i nie musiałam niczego poprawiać w domu.”</blockquote><cite>— przykładowa opinia</cite></div>
+        <div class="rv-item"><div class="stars" aria-label="5 na 5">★★★★★</div><blockquote>„Balayage wygląda naturalnie nawet po dwóch miesiącach. Polecam konsultację.”</blockquote><cite>— przykładowa opinia</cite></div>
+        <div class="rv-item"><div class="stars" aria-label="5 na 5">★★★★★</div><blockquote>„Szybka rezerwacja online, punktualnie i bez czekania. Fade jak z katalogu.”</blockquote><cite>— przykładowa opinia</cite></div>
+      </div>
+      <div class="rv-dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section gift" id="voucher">
+  <div class="container gift-grid">
+    <div>
+      <p class="eyebrow">Karta podarunkowa</p>
+      <h2 class="h2" data-split>Podaruj <em>chwilę dla siebie</em></h2>
+      <p class="muted" data-reveal>Skonfiguruj voucher. W prawdziwym serwisie można by go kupić online; tutaj to tylko podgląd.</p>
+      <div class="gift-opts" data-reveal>
+        <div class="seg" id="giftAmt" role="radiogroup" aria-label="Kwota"><label><input type="radio" name="a" value="150"> 150 zł</label><label><input type="radio" name="a" value="250" checked> 250 zł</label><label><input type="radio" name="a" value="400"> 400 zł</label><label><input type="radio" name="a" value="600"> 600 zł</label></div>
+        <label class="field">Dla kogo?<input id="giftTo" maxlength="28" placeholder="np. Dla Mamy"></label>
+        <button class="btn" id="giftBtn" type="button">Zamów voucher (demo)</button>
+      </div>
+    </div>
+    <div class="voucher" id="voucherCard" aria-live="polite" style="background:radial-gradient(circle at 80% 0%,#f0c2ae66,transparent 55%),linear-gradient(135deg,#4a3631,#1d1614);border-color:#f0c2ae55">
+      <div class="v-top"><span>Studio Loka</span><span>Karta podarunkowa</span></div>
+      <div class="v-amt" id="vAmt">250 zł</div>
+      <div class="v-to" id="vTo">Dla Ciebie</div>
+      <div class="v-bot"><span>Nr [XXXX-XXXX]</span><span>ważna 12 mies. · przykład</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section booking" id="rezerwacja">
+  <div class="container bk-wrap">
+    <div class="bk-side">
+      <p class="eyebrow">Rezerwacja online</p>
+      <h2 class="h2" data-split>Umów <em>wizytę</em></h2>
+      <p class="muted">Usługi, stylistka, termin, dane. Formularz demonstracyjny, rezerwacja nigdzie nie trafia.</p>
+      <ul class="hours-list" id="hoursList"></ul>
+    </div>
+    <div class="bk" id="bk">
+      <ol class="bk-labels"><li>Usługi</li><li>Termin</li><li>Dane</li><li>Gotowe</li></ol>
+      <div class="bk-bar"><i></i></div>
+      <div class="bk-step">
+        <h3 class="bk-h">Co robimy i z kim?</h3>
+        <div class="bk-svc" id="bkSvc"></div>
+        <p class="muted small" style="margin:18px 0 0">Stylistka</p>
+        <div class="mini-sty" id="miniSty"></div>
+        <div class="bk-total"><span id="bkTotT">0 min</span><b id="bkTotP">0 zł</b></div>
+        <div class="bk-nav"><span></span><button class="btn" type="button" data-next>Dalej <span class="arr">→</span></button></div>
+      </div>
+      <div class="bk-step" hidden>
+        <h3 class="bk-h">Wybierz dzień i godzinę</h3>
+        <div class="bk-dt"><div class="cal"></div><div><p class="muted small" id="slotHint">Najpierw wybierz dzień.</p><div class="slots"></div></div></div>
+        <div class="bk-nav"><button class="btn ghost" type="button" data-prev>← Wstecz</button><button class="btn" type="button" data-next>Dalej <span class="arr">→</span></button></div>
+      </div>
+      <div class="bk-step" hidden>
+        <h3 class="bk-h">Twoje dane</h3>
+        <form id="bkForm" novalidate class="row2">
+          <label class="field">Imię i nazwisko<input name="n" required autocomplete="name"></label>
+          <label class="field">Telefon<input name="t" type="tel" required autocomplete="tel" placeholder="[000 000 000]"></label>
+          <label class="field" style="grid-column:1/-1">E-mail<input name="e" type="email" required autocomplete="email"></label>
+          <label class="field" style="grid-column:1/-1">Uwagi (np. zdjęcie inspiracji, alergie)<textarea name="u" rows="2"></textarea></label>
+          <label class="check" style="grid-column:1/-1"><input type="checkbox" required> Akceptuję, że to formularz demonstracyjny i dane nie zostaną nigdzie wysłane.</label>
+        </form>
+        <div class="bk-nav"><button class="btn ghost" type="button" data-prev>← Wstecz</button><button class="btn" type="button" data-next>Potwierdź wizytę</button></div>
+      </div>
+      <div class="bk-step" hidden>
+        <div class="done-ic" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 27l7 7 15-16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="bk-h">Do zobaczenia!</h3>
+        <dl class="summary" id="bkSum"></dl>
+        <p class="muted small" style="margin-top:20px">To wersja demonstracyjna: nic nie zostało wysłane, a termin nie jest naprawdę zarezerwowany.</p>
+        <div class="bk-nav"><span></span><button class="btn ghost" type="button" id="bkAgain">Nowa rezerwacja</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq-sec" id="faq">
+  <div class="container faq-grid">
+    <div><p class="eyebrow">FAQ</p><h2 class="h2" data-split>Zanim <em>przyjdziesz</em></h2></div>
+    <div class="faq">
+      <details><summary>Czy przed koloryzacją potrzebna jest konsultacja?</summary><p>Przy pierwszej koloryzacji tak. Trwa ok. 15 minut, jest bezpłatna i można ją połączyć z wizytą.</p></details>
+      <details><summary>Jak odwołać lub przełożyć wizytę?</summary><p>Najpóźniej 24 godziny wcześniej, telefonicznie: [+48 000 000 000] (przykładowa zasada).</p></details>
+      <details><summary>Czy mogę przyjść z dzieckiem?</summary><p>Tak, strzyżemy też dzieci od 4. roku życia. Usługa „Strzyżenie dziecięce” w cenniku.</p></details>
+      <details><summary>Czy cena może się zmienić?</summary><p>Ceny w kalkulatorze są orientacyjne. Przy bardzo gęstych lub długich włosach stylistka poda wycenę przed rozpoczęciem.</p></details>
+      <details><summary>Jakie formy płatności przyjmujecie?</summary><p>[Do uzupełnienia: gotówka, karta, BLIK].</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="kontakt">
+  <div class="container contact-grid">
+    <div>
+      <p class="eyebrow">Kontakt i dojazd</p>
+      <h2 class="h2" data-split>Wpadnij do <em>nas</em></h2>
+      <ul class="contact-list">
+        <li><span>Adres</span>[ul. Przykładowa 5, 00-000 Miasto]</li>
+        <li><span>Telefon</span>[+48 000 000 000]</li>
+        <li><span>E-mail</span>[kontakt@przyklad.pl]</li>
+        <li><span>Godziny</span>Pn–Pt 9–20 · Sob 9–15 · Nd nieczynne</li>
+      </ul>
+    </div>
+    <div class="map" role="img" aria-label="Miejsce na mapę Google (placeholder)">
+      <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice"><rect width="600" height="400" fill="var(--soft)"/><g stroke="var(--card)" fill="none"><path d="M-10 200 L620 240" stroke-width="26"/><path d="M330 -10 L250 410" stroke-width="18"/><path d="M-10 60 L620 100" stroke-width="10"/><path d="M120 -10 L160 410" stroke-width="10"/><path d="M-10 340 Q300 380 620 300" stroke-width="8"/></g><rect x="360" y="260" width="100" height="70" rx="10" fill="var(--acc)" opacity=".12"/></svg>
+      <span class="ping"></span><span class="pin"></span>
+      <div class="map-cap"><b>Studio Loka</b><br>[Mapa Google – do osadzenia]</div>
+    </div>
+  </div>
+</section>
+
+<section class="insta-sec" aria-label="Instagram (przykład)">
+  <div class="container insta-head"><p class="eyebrow">@studioloka · przykładowy profil</p></div>
+  <div class="insta" id="insta"></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div><a href="#top" class="brand" style="opacity:1"><span><b>Studio</b> <i>Loka</i></span></a><p style="opacity:.7;margin-top:14px;max-width:32ch">Fikcyjny salon fryzjerski. Strona przygotowana jako projekt demonstracyjny.</p></div>
+      <div><h4>Odwiedź nas</h4><ul><li>[ul. Przykładowa 5]</li><li>[00-000 Miasto]</li><li>[+48 000 000 000]</li></ul></div>
+      <div><h4>Na skróty</h4><ul><li><a href="#cennik">Cennik</a></li><li><a href="#rezerwacja">Rezerwacja</a></li><li><a href="#metamorfozy">Metamorfozy</a></li><li><a href="#voucher">Vouchery</a></li></ul></div>
+      <div><h4>Newsletter</h4><p style="opacity:.7;font-size:.9rem">Porady pielęgnacyjne i wolne terminy.</p><form class="news" data-demo-form="Zapisano do newslettera (demo, nic nie zostało wysłane)." novalidate><input type="email" required placeholder="Twój e-mail" aria-label="E-mail do newslettera"><button aria-label="Zapisz">→</button></form></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Studio Loka · [dane firmy]</span><span>Projekt demonstracyjny <a href="../../">Klikoo</a> · salon, osoby, opinie i ceny są fikcyjne</span></div>
+  </div>
+</footer>
+
+<div class="cookie" role="dialog" aria-label="Pliki cookies"><b>🍪 Ciasteczka</b><p>Ta demonstracyjna strona nie używa śledzących cookies. Zapamiętujemy tylko Twój wybór i tryb kolorów.</p><div class="row"><button class="btn" data-cookie="all">W porządku</button><button class="btn ghost" data-cookie="min">Tylko niezbędne</button></div></div>
+
+<script src="kit.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
