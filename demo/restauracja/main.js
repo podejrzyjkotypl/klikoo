@@ -8,6 +8,7 @@
   const open = H[d] && h >= H[d][0] && h < H[d][1], oe = $('#openNow');
   oe.classList.add(open ? 'open' : 'closed'); oe.textContent = open ? 'Otwarte teraz' : 'Teraz zamknięte';
   $('#openHours').textContent = H[d] ? `Dziś ${H[d][0]}:00–${H[d][1]}:00` : 'Dziś nieczynne';
+  $('#mOpen').classList.add(open ? 'open' : 'closed'); $('#mOpen').textContent = open ? 'Otwarte teraz' : 'Teraz zamknięte'; $('#mHours').textContent = $('#openHours').textContent;
   $('#hoursList').innerHTML = [1, 2, 3, 4, 5, 6, 0].map(k => `<li class="${k === d ? 'today' : ''}"><span>${DN[k]}${k === d ? ' · dziś' : ''}</span><span>${H[k] ? H[k][0] + ':00 – ' + H[k][1] + ':00' : 'nieczynne'}</span></li>`).join('');
   /* menu data */
   const A = { 1: 'gluten', 3: 'jaja', 7: 'mleko', 8: 'orzechy', 9: 'seler', 10: 'gorczyca', 12: 'siarczyny' };

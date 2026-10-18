@@ -2,7 +2,9 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;transition:background .4s,color .4s}
-body.noscroll,body.menu-open{overflow:hidden}
+body.noscroll,body.menu-open{overflow:hidden}html:has(body.menu-open){overflow:hidden}
+.mnav{position:fixed;inset:0;height:100vh;height:100dvh;z-index:45;visibility:hidden;overflow-y:auto;overscroll-behavior:contain}.menu-open .mnav{visibility:visible}
+@media (min-width:981px){.mnav{display:none}}
 img{max-width:100%;display:block}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--acc);outline-offset:3px}
@@ -35,13 +37,9 @@ a{color:inherit}
 .icon-btn{width:42px;height:42px;border-radius:50%;border:1px solid currentColor;background:none;color:inherit;display:grid;place-items:center;cursor:pointer;opacity:.85;transition:opacity .2s,transform .3s}.icon-btn:hover{opacity:1;transform:rotate(20deg)}
 .burger{display:none}
 @media (max-width:980px){
- .nav-links{position:fixed;inset:0;background:var(--bg);color:var(--ink);flex-direction:column;justify-content:center;font-size:1.6rem;gap:22px;clip-path:circle(0 at calc(100% - 40px) 40px);transition:clip-path .7s cubic-bezier(.7,0,.2,1);z-index:-1}
- .nav-links a{font-family:var(--serif);font-size:2rem}
- .menu-open .nav-links{clip-path:circle(150% at calc(100% - 40px) 40px)}
- .menu-open .nav{color:var(--ink)}
- .burger{display:grid;place-items:center;width:44px;height:44px;border:0;background:none;color:inherit;cursor:pointer;position:relative}
- .burger span{position:absolute;width:24px;height:1.5px;background:currentColor;transition:transform .4s}.burger span:first-child{transform:translateY(-4px)}.burger span:last-child{transform:translateY(4px)}
- .menu-open .burger span:first-child{transform:rotate(45deg)}.menu-open .burger span:last-child{transform:rotate(-45deg)}
+ .nav-links{display:none}
+ .burger{display:grid;place-items:center;width:44px;height:44px;border:0;background:none;color:inherit;cursor:pointer;position:relative;z-index:2}
+ .menu-open .nav{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:none!important}
  .nav-tools .btn{display:none}
 }
 /* hero */

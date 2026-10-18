@@ -71,3 +71,5 @@
   $('#bkAgain').onclick = () => { $('#bkForm').reset(); bk.st.date = null; bk.st.time = null; bk.render(); $('.slots').innerHTML = ''; bk.go(0); };
   sync(); syncT2();
 })();
+
+document.querySelectorAll('.md-sty a').forEach(a=>a.addEventListener('click',()=>{const b=document.querySelector(`.sty[data-s="${a.dataset.sty}"]`);b&&b.click();}));

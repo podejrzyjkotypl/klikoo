@@ -17,7 +17,12 @@
   const nav = $('.nav'), burger = $('.burger'), menu = $('.menu-panel');
   const onScroll = () => { nav && nav.classList.toggle('scrolled', scrollY > 40); };
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
-  if (burger) burger.addEventListener('click', () => { const o = document.body.classList.toggle('menu-open'); burger.setAttribute('aria-expanded', o); });
+  const mnav = $('.mnav'); if (mnav && mnav.parentElement !== document.body) document.body.appendChild(mnav);
+  const setMenu = o => { document.body.classList.toggle('menu-open', o); burger && burger.setAttribute('aria-expanded', o); burger && burger.setAttribute('aria-label', o ? 'Zamknij menu' : 'Menu'); if (mnav) { mnav.setAttribute('aria-hidden', !o); mnav.inert = !o; } if (window.lenis) o ? lenis.stop() : lenis.start(); };
+  Kit.setMenu = setMenu; if (mnav) { mnav.inert = true; mnav.setAttribute('aria-hidden', 'true'); }
+  if (burger) burger.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
+  addEventListener('keydown', e => { if (e.key === 'Escape' && document.body.classList.contains('menu-open')) { setMenu(false); burger && burger.focus(); } });
+  addEventListener('resize', () => { if (innerWidth > 900 && document.body.classList.contains('menu-open')) setMenu(false); });
   const secs = $$('section[id]');
   const spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) $$('.nav a[href^="#"]').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
   secs.forEach(s => spy.observe(s));
@@ -26,7 +31,7 @@
   const curtain = document.createElement('div'); curtain.className = 'curtain'; curtain.setAttribute('aria-hidden', 'true'); document.body.appendChild(curtain);
   $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
     const id = a.getAttribute('href'); if (id.length < 2) return; const t = $(id); if (!t) return; e.preventDefault();
-    document.body.classList.remove('menu-open'); burger && burger.setAttribute('aria-expanded', false);
+    Kit.setMenu(false);
     if (reduce || a.dataset.noCurtain !== undefined) { t.scrollIntoView(); return; }
     curtain.classList.add('in');
     setTimeout(() => { t.scrollIntoView({ behavior: 'instant' }); history.replaceState(null, '', id); curtain.classList.replace('in', 'out'); setTimeout(() => curtain.classList.remove('out'), 600); }, 520);
