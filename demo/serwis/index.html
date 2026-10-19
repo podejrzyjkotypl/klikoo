@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nanofix · serwis telefonów i akcesoria | projekt demonstracyjny</title>
+<meta name="description" content="Nanofix – fikcyjny serwis telefonów: wycena naprawy online, śledzenie statusu, skup telefonów, akcesoria i kurier. Projekt demonstracyjny studia Klikoo.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#06070b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nanofix · serwis telefonów (demo Klikoo)">
+<meta property="og:description" content="Wycena naprawy w 3 kliknięcia, status naprawy online, skup i akcesoria. Projekt demonstracyjny.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2306070b'/><path d='M18 46V18l28 28V18' stroke='%233cf0ff' stroke-width='6' fill='none' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ElectronicsStore","name":"Nanofix (projekt demonstracyjny)","address":{"@type":"PostalAddress","streetAddress":"[ul. Przykładowa 7]","addressLocality":"[Miasto]"}}</script>
+</head>
+<body>
+<a href="#main" class="skip">Przejdź do treści</a>
+<div class="demo-note">// projekt demonstracyjny klikoo · fikcyjny serwis · ceny i terminy przykładowe</div>
+
+<header class="nav">
+  <a href="#top" class="logo" aria-label="Nanofix – strona główna"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="10" fill="none" stroke="var(--cy)" stroke-width="2"/><path d="M12 29V11l16 18V11" stroke="var(--cy)" stroke-width="3" fill="none" stroke-linejoin="round"/></svg><span>nanofix</span></a>
+  <nav class="rail" aria-label="Sekcje">
+    <a href="#wycena"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 9h8M8 13h5"/></svg><span>Wycena</span></a>
+    <a href="#diagnoza"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg><span>Diagnoza 3D</span></a>
+    <a href="#status"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg><span>Status</span></a>
+    <a href="#sklep"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1 13H6zM9 7a3 3 0 016 0"/></svg><span>Akcesoria</span></a>
+    <a href="#skup"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0114-5l2-2v6h-6l2-2a5 5 0 10 1 6"/></svg><span>Skup</span></a>
+    <a href="#gwarancja"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6z"/></svg><span>Gwarancja</span></a>
+    <a href="#kontakt"><svg viewBox="0 0 24 24"><path d="M12 22s7-7 7-12a7 7 0 00-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Kontakt</span></a>
+  </nav>
+  <div class="rail-tools">
+    <button class="ic" data-theme-toggle aria-label="Przełącz tryb jasny/ciemny"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 109 9 7 7 0 01-9-9z"/></svg></button>
+    <button class="ic cart-ic" data-cart-open aria-label="Otwórz koszyk akcesoriów"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1 13H6zM9 7a3 3 0 016 0"/></svg><b data-count>0</b></button>
+    <a href="#wizyta" class="cta-v">Umów naprawę</a>
+  </div>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></button>
+</header>
+
+<nav class="mnav term" id="mnav" aria-label="Menu mobilne">
+  <div class="term-in">
+    <p class="t-line"><span class="pr">nanofix@serwis:~$</span> <span class="typed">ls ./menu</span><span class="caret"></span></p>
+    <ol class="t-list">
+      <li><a href="#wycena"><span>01</span>wycena_naprawy<em>→ cena i czas w 3 krokach</em></a></li>
+      <li><a href="#diagnoza"><span>02</span>diagnoza_3d<em>→ kliknij uszkodzoną część</em></a></li>
+      <li><a href="#status"><span>03</span>status_naprawy<em>→ śledź zlecenie</em></a></li>
+      <li><a href="#sklep"><span>04</span>akcesoria<em>→ etui, szkła, ładowarki</em></a></li>
+      <li><a href="#skup"><span>05</span>skup_telefonow<em>→ wycena odkupu</em></a></li>
+      <li><a href="#gwarancja"><span>06</span>gwarancja<em>→ 12 miesięcy*</em></a></li>
+      <li><a href="#kontakt"><span>07</span>kontakt<em>→ adres i godziny</em></a></li>
+    </ol>
+    <form class="t-track" id="mTrack"><label for="mTrackIn">$ status --zlecenie</label><div><input id="mTrackIn" placeholder="NF-2041" autocomplete="off"><button>enter ↵</button></div></form>
+    <a href="#wizyta" class="t-cta">[ umów naprawę / kurier ]</a>
+    <p class="t-foot">pn–pt 9–19 · sob 10–15 · [+48 000 000 000]<br>// projekt demonstracyjny klikoo</p>
+  </div>
+</nav>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"><img src="img/hero-1920.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1024w, img/hero-1920.webp 1920w" sizes="100vw" alt="" fetchpriority="high"><div class="gridlines"></div></div>
+  <div class="wrap hero-in">
+    <p class="mono tag"><span class="led"></span> serwis online · otwarte do 19:00</p>
+    <h1 data-split>Zbity ekran? Naprawimy, zanim skończysz kawę.</h1>
+    <p class="lead" data-reveal>Wymiana ekranu, baterii i portu ładowania nawet w 45 minut*. Wycena online, status naprawy na żywo i kurier, który odbierze telefon spod drzwi.</p>
+    <div class="hero-cta" data-reveal><a href="#wycena" class="btn">Wyceń naprawę <span>→</span></a><a href="#status" class="btn ghost">Sprawdź status</a></div>
+    <div class="hud" data-stagger>
+      <div><span class="mono">czas_naprawy</span><b>od 45 min*</b></div>
+      <div><span class="mono">gwarancja</span><b>12 mies.*</b></div>
+      <div><span class="mono">diagnoza</span><b>0 zł*</b></div>
+    </div>
+    <p class="mono foot-note">* warunki przykładowe – serwis fikcyjny</p>
+  </div>
+</section>
+
+<section class="sec wrap" id="wycena">
+  <header class="sh"><p class="mono">01 / wycena</p><h2 data-split>Cena i czas naprawy w 3 kliknięciach</h2></header>
+  <div class="est">
+    <div class="est-steps">
+      <div class="est-col"><p class="mono">[1] marka</p><div class="opts" id="brands" role="radiogroup" aria-label="Marka"></div></div>
+      <div class="est-col"><p class="mono">[2] model</p><div class="opts" id="models" role="radiogroup" aria-label="Model"></div></div>
+      <div class="est-col"><p class="mono">[3] usterka</p><div class="opts faults" id="faults" role="radiogroup" aria-label="Usterka"></div></div>
+    </div>
+    <aside class="est-res glass" aria-live="polite">
+      <p class="mono">wynik_wyceny</p>
+      <h3 id="estTitle">Wybierz model i usterkę</h3>
+      <div class="est-num"><div><span class="mono">cena*</span><b id="estPrice">—</b></div><div><span class="mono">czas</span><b id="estTime">—</b></div></div>
+      <ul class="est-inc" id="estInc"></ul>
+      <a href="#wizyta" class="btn" id="estBook">Umów tę naprawę <span>→</span></a>
+      <p class="mono small">* ceny przykładowe, ostateczna po bezpłatnej diagnozie</p>
+    </aside>
+  </div>
+</section>
+
+<section class="sec" id="diagnoza">
+  <div class="wrap diag">
+    <div>
+      <header class="sh"><p class="mono">02 / diagnoza 3d</p><h2 data-split>Kliknij, co nie działa</h2></header>
+      <p class="lead" data-reveal>Obróć telefon (przeciągnij lub użyj przycisków) i kliknij świecący punkt. Pokażemy objawy, cenę i czas dla modelu wybranego w wycenie.</p>
+      <div class="diag-panel glass" id="diagPanel" aria-live="polite"><p class="mono">// wybierz punkt na telefonie</p><h3>Diagnoza interaktywna</h3><p class="muted">Punkty: ekran, aparat przedni, głośnik, przyciski, port ładowania, bateria, aparat tylny, plecki.</p></div>
+    </div>
+    <div class="stage" data-reveal>
+      <div class="phone3d" id="phone" tabindex="0" aria-label="Model telefonu 3D – przeciągnij, aby obrócić">
+        <div class="face front"><div class="screen"><div class="notch"></div><div class="glow"></div></div></div>
+        <div class="face back"><div class="cam"><i></i><i></i><i></i></div><div class="logo-b">N</div></div>
+        <div class="side s-l"></div><div class="side s-r"></div><div class="side s-t"></div><div class="side s-b"></div>
+      </div>
+      <div class="hotspots" id="hotspots"></div>
+      <div class="rot"><button class="chip" type="button" data-rot="0">Przód</button><button class="chip" type="button" data-rot="180">Tył</button><button class="chip" type="button" data-spin>↻ Obróć</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="efekt">
+  <div class="ba-wrap">
+    <header class="sh"><p class="mono">03 / przed i po</p><h2 data-split>Ten sam telefon. 45 minut później.</h2><p class="muted" data-reveal>Przesuń suwak. Zdjęcia poglądowe, wygenerowane na potrzeby demo.</p></header>
+    <div class="ba" id="ba" data-reveal>
+      <img src="img/before.webp" alt="Telefon z rozbitym ekranem przed naprawą" draggable="false">
+      <img class="after" src="img/after.webp" alt="Ten sam telefon z nowym ekranem po naprawie" draggable="false">
+      <span class="line"></span><span class="knob" aria-hidden="true">‹ ›</span><span class="lb1 mono">przed</span><span class="lb2 mono">po</span>
+      <input type="range" min="0" max="100" value="50" aria-label="Porównaj zdjęcie przed i po naprawie">
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="status">
+  <div class="track glass">
+    <div>
+      <header class="sh"><p class="mono">04 / status</p><h2 data-split>Gdzie jest mój telefon?</h2></header>
+      <form id="trackForm" class="track-form" novalidate><label for="trackIn" class="mono">numer zlecenia</label><div><input id="trackIn" placeholder="np. NF-2041" autocomplete="off"><button class="btn">Sprawdź</button></div></form>
+      <p class="muted small">Przykładowe numery: <button class="link" data-ord="NF-2041">NF-2041</button> <button class="link" data-ord="NF-1987">NF-1987</button> <button class="link" data-ord="NF-2105">NF-2105</button></p>
+    </div>
+    <div class="tl" id="tl" aria-live="polite"><p class="mono muted">// wpisz numer zlecenia, aby zobaczyć postęp</p></div>
+  </div>
+</section>
+
+<section class="sec wrap" id="sklep">
+  <header class="sh row"><div><p class="mono">05 / akcesoria</p><h2 data-split>Pasuje do Twojego telefonu</h2></div>
+    <label class="sel"><span class="mono">mój model</span><select id="accModel" aria-label="Filtruj po modelu telefonu"></select></label></header>
+  <div class="chips" id="accCats" role="radiogroup" aria-label="Kategoria akcesoriów"></div>
+  <ul class="acc" id="acc"></ul>
+</section>
+
+<section class="sec" id="skup">
+  <div class="wrap trade">
+    <div>
+      <header class="sh"><p class="mono">06 / skup</p><h2 data-split>Ile dostaniesz za stary telefon?</h2></header>
+      <div class="tr-form">
+        <label class="sel"><span class="mono">model</span><select id="trModel"></select></label>
+        <div><p class="mono">pamięć</p><div class="opts row" id="trMem" role="radiogroup" aria-label="Pamięć"></div></div>
+        <label class="rng"><span class="mono">stan obudowy: <b id="trCondL"></b></span><input type="range" id="trCond" min="1" max="5" value="4"></label>
+        <label class="rng"><span class="mono">kondycja baterii: <b id="trBatL"></b></span><input type="range" id="trBat" min="70" max="100" value="88"></label>
+        <div class="checks"><label><input type="checkbox" id="trBox" checked> pudełko</label><label><input type="checkbox" id="trCrack"> pęknięty ekran</label></div>
+      </div>
+    </div>
+    <div class="gauge glass" aria-live="polite">
+      <svg viewBox="0 0 200 120" aria-hidden="true"><path d="M20 110a80 80 0 01160 0" class="g-bg"/><path d="M20 110a80 80 0 01160 0" class="g-fg" id="gArc"/></svg>
+      <p class="mono">oferta_skupu*</p><b id="trOffer">0 zł</b>
+      <p class="muted" id="trBonus"></p>
+      <button class="btn" type="button" id="trBtn">Sprzedaj (demo)</button>
+      <p class="mono small">* wycena orientacyjna, przykładowa</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="wizyta">
+  <header class="sh"><p class="mono">07 / wizyta</p><h2 data-split>Kurier albo wizyta w serwisie</h2></header>
+  <div class="bk glass" id="bk">
+    <ol class="bk-labels mono"><li>tryb</li><li>termin</li><li>dane</li><li>gotowe</li></ol>
+    <div class="bk-bar"><i></i></div>
+    <div class="bk-step">
+      <div class="modes" role="radiogroup" aria-label="Tryb">
+        <label><input type="radio" name="bm" value="k" checked><span><b>Kurier door-to-door</b><small>odbierzemy i odwieziemy telefon · 0 zł przy naprawie*</small></span></label>
+        <label><input type="radio" name="bm" value="s"><span><b>Wizyta w serwisie</b><small>naprawa „na poczekaniu” przy Tobie</small></span></label>
+      </div>
+      <p class="bk-sel mono" id="bkSel"></p>
+      <div class="bk-nav"><span></span><button class="btn" type="button" data-next>Dalej →</button></div>
+    </div>
+    <div class="bk-step" hidden>
+      <div class="bk-dt"><div class="cal"></div><div><p class="mono small" id="slotHint">// wybierz dzień</p><div class="slots"></div></div></div>
+      <div class="bk-nav"><button class="btn ghost" type="button" data-prev>← Wstecz</button><button class="btn" type="button" data-next>Dalej →</button></div>
+    </div>
+    <div class="bk-step" hidden>
+      <form id="bkForm" class="form2" novalidate>
+        <label class="fld">Imię i nazwisko<input name="n" required autocomplete="name"></label>
+        <label class="fld">Telefon kontaktowy<input name="t" type="tel" required placeholder="[000 000 000]"></label>
+        <label class="fld wide" id="addrF">Adres odbioru (kurier)<input name="a" placeholder="[ulica, nr, miasto]" required></label>
+        <label class="fld wide">Opis usterki<textarea name="d" rows="2" placeholder="np. telefon spadł, ekran miga"></textarea></label>
+        <label class="chk wide"><input type="checkbox" required> Rozumiem, że to formularz demonstracyjny i dane nie są nigdzie wysyłane.</label>
+      </form>
+      <div class="bk-nav"><button class="btn ghost" type="button" data-prev>← Wstecz</button><button class="btn" type="button" data-next>Potwierdź</button></div>
+    </div>
+    <div class="bk-step" hidden>
+      <p class="mono ok">✓ zlecenie_utworzone</p>
+      <dl class="sum" id="bkSum"></dl>
+      <p class="muted small">Wersja demonstracyjna: nic nie zostało wysłane, kurier nie przyjedzie.</p>
+      <div class="bk-nav"><span></span><button class="btn ghost" type="button" id="bkAgain">Nowe zlecenie</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="gwarancja">
+  <header class="sh"><p class="mono">08 / gwarancja</p><h2 data-split>Naprawa z papierami</h2></header>
+  <div class="war" data-stagger>
+    <article class="glass"><span class="mono">12 mies.*</span><h3>Gwarancja na naprawę</h3><p>Na wymienioną część i robociznę. Usterka wróci? Poprawiamy bez kosztów.</p></article>
+    <article class="glass"><span class="mono">certyfikat</span><h3>Sprawdzone części</h3><p>Oryginalne lub wysokiej jakości zamienniki – zawsze mówimy, co montujemy.</p></article>
+    <article class="glass"><span class="mono">0 zł*</span><h3>Diagnoza gratis</h3><p>Nie naprawiasz? Nie płacisz za diagnozę (zasada przykładowa).</p></article>
+    <article class="glass"><span class="mono">rodo</span><h3>Twoje dane są bezpieczne</h3><p>Nie przeglądamy zawartości telefonu. Możesz zostawić go z blokadą ekranu.</p></article>
+  </div>
+  <div class="team">
+    <figure class="person" data-reveal><img src="img/tech1-640.webp" srcset="img/tech1-640.webp 640w, img/tech1.webp 1024w" sizes="(max-width:900px) 100vw, 33vw" alt="Technik serwisu w czarnym fartuchu" loading="lazy"><figcaption><b>Ola Kurek</b><span class="mono">mikrolutowanie · postać fikcyjna</span></figcaption></figure>
+    <figure class="person" data-reveal style="--d:.1s"><img src="img/tech2-640.webp" srcset="img/tech2-640.webp 640w, img/tech2.webp 1024w" sizes="(max-width:900px) 100vw, 33vw" alt="Technik serwisu z lupą zegarmistrzowską na głowie" loading="lazy"><figcaption><b>Bartek Wolny</b><span class="mono">ekrany i baterie · postać fikcyjna</span></figcaption></figure>
+    <figure class="person shop" data-reveal style="--d:.2s"><img src="img/shop-640.webp" srcset="img/shop-640.webp 640w, img/shop.webp 1024w" sizes="(max-width:900px) 100vw, 33vw" alt="Wnętrze serwisu z podświetlaną ladą i półkami z akcesoriami" loading="lazy"><figcaption><b>Punkt serwisowy</b><span class="mono">[ul. Przykładowa 7]</span></figcaption></figure>
+  </div>
+  <div class="reviews glass">
+    <p class="mono">opinie · <span class="warn">przykładowe, fikcyjne</span></p>
+    <div class="rv-track">
+      <div class="rv-item"><blockquote>„Ekran wymieniony w godzinę, a status widziałem na bieżąco w telefonie żony.”</blockquote><cite class="mono">— przykładowa opinia</cite></div>
+      <div class="rv-item"><blockquote>„Kurier odebrał telefon rano, wieczorem miałem go z nową baterią.”</blockquote><cite class="mono">— przykładowa opinia</cite></div>
+      <div class="rv-item"><blockquote>„Uczciwie powiedzieli, że naprawa się nie opłaca, i odkupili telefon.”</blockquote><cite class="mono">— przykładowa opinia</cite></div>
+    </div>
+    <div class="rv-dots"></div>
+  </div>
+</section>
+
+<section class="sec wrap" id="kontakt">
+  <div class="contact">
+    <div class="glass c-info">
+      <header class="sh"><p class="mono">09 / kontakt</p><h2>Wpadnij do labu</h2></header>
+      <dl><dt class="mono">adres</dt><dd>[ul. Przykładowa 7, 00-000 Miasto]</dd><dt class="mono">telefon</dt><dd>[+48 000 000 000]</dd><dt class="mono">e-mail</dt><dd>[serwis@przyklad.pl]</dd><dt class="mono">godziny</dt><dd>Pn–Pt 9–19 · Sob 10–15</dd></dl>
+      <div class="faq">
+        <details><summary>Czy stracę dane przy naprawie?</summary><p>Przy wymianie ekranu czy baterii dane zostają w telefonie. Mimo to zalecamy kopię zapasową.</p></details>
+        <details><summary>Ile kosztuje kurier?</summary><p>Przy naprawie odbiór i dostawa są bezpłatne; bez naprawy [cena do ustalenia] (warunki przykładowe).</p></details>
+        <details><summary>Naprawiacie tablety i zegarki?</summary><p>Tak, wycenę zrobimy po diagnozie. [Lista urządzeń do uzupełnienia].</p></details>
+        <details><summary>Jak płacę?</summary><p>[Do uzupełnienia: karta, BLIK, gotówka].</p></details>
+      </div>
+    </div>
+    <div class="map" role="img" aria-label="Miejsce na mapę Google (placeholder)">
+      <svg viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice"><defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="var(--line)"/></pattern></defs><rect width="600" height="500" fill="var(--bg2)"/><rect width="600" height="500" fill="url(#g)"/><g fill="none" stroke="var(--cy)" stroke-opacity=".35"><path d="M-10 330 L620 260" stroke-width="10"/><path d="M220 -10 L300 510" stroke-width="8"/><path d="M-10 120 L620 150" stroke-width="4"/><path d="M460 -10 L420 510" stroke-width="4"/></g></svg>
+      <span class="radar"></span><span class="dotp"></span>
+      <p class="map-cap mono">nanofix_lab · [mapa google do osadzenia]</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div><a href="#top" class="logo"><span>nanofix</span></a><p class="muted">Fikcyjny serwis telefonów. Strona przygotowana jako projekt demonstracyjny.</p></div>
+    <form class="news" data-demo-form="Zapisano do newslettera (demo, nic nie zostało wysłane)." novalidate><label for="nl" class="mono">newsletter: porady i promocje na akcesoria</label><div><input id="nl" type="email" required placeholder="email@domena.pl"><button class="btn">Zapisz</button></div></form>
+  </div>
+  <div class="wrap foot-b mono"><span>© <span id="yr"></span> nanofix · [dane firmy]</span><span>projekt demonstracyjny <a href="../../">klikoo</a> · firma, osoby, opinie i ceny są fikcyjne</span></div>
+</footer>
+
+<aside class="cart" id="cart" aria-label="Koszyk" aria-hidden="true">
+  <div class="cart-bg" data-cart-close></div>
+  <div class="cart-panel glass" role="dialog" aria-modal="true" aria-labelledby="cartH">
+    <div class="cart-h"><h2 id="cartH" class="mono">koszyk[<span data-count>0</span>]</h2><button class="ic" data-cart-close aria-label="Zamknij koszyk">✕</button></div>
+    <ul class="cart-list" id="cartList"></ul>
+    <div class="cart-f"><div class="row"><span class="mono">suma*</span><b id="cartTot">0 zł</b></div><button class="btn" id="checkout" type="button">Zamów z odbiorem w serwisie (demo)</button><p class="mono small">* ceny przykładowe · nic nie zostanie zamówione</p></div>
+  </div>
+</aside>
+
+<div class="cookie glass" role="dialog" aria-label="Pliki cookies"><p class="mono">&gt; cookies.policy</p><p>Ta demonstracyjna strona nie używa śledzących cookies. Zapisujemy tylko koszyk i motyw w Twojej przeglądarce.</p><div><button class="btn" data-cookie="all">Akceptuję</button><button class="btn ghost" data-cookie="min">Tylko niezbędne</button></div></div>
+
+<script src="kit.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
