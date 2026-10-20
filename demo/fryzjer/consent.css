@@ -63,3 +63,16 @@ html[data-cc=serwis] .cc-dlg{background:var(--bg2)}
 html[data-cc=serwis] .cc-always,html[data-cc=serwis] .cc-demo{font-family:var(--m)}
 html[data-cc=serwis] .cc-bar::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(90deg,var(--cy),var(--vi));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.7}
 @media (min-width:981px){html[data-cc=serwis] .cc-bar{left:calc(50% + var(--rail)/2);width:min(980px,calc(100% - var(--rail) - 32px))}}
+html[data-cc=silownia] .cc-root{--cc-bg:var(--bg);--cc-ink:var(--ink);--cc-mut:var(--mut);--cc-line:var(--line2);--cc-acc:var(--acc);--cc-on:#0c0c0c;--cc-font:var(--f);--cc-hfont:var(--d);--cc-hw:400;--cc-r:0px;--cc-br:0px;--cc-sh:8px 8px 0 var(--acc);--cc-scrim:rgba(0,0,0,.75)}
+html[data-cc=silownia] .cc-bar,html[data-cc=silownia] .cc-dlg{border:2px solid var(--ink)}
+html[data-cc=silownia] .cc-h{font-size:1.5rem;text-transform:uppercase;letter-spacing:.01em}html[data-cc=silownia] .cc-mh .cc-h{font-size:1.9rem}
+html[data-cc=silownia] .cc-b{text-transform:uppercase;letter-spacing:.06em;font-weight:800;font-size:.76rem}
+html[data-cc=silownia] .cc-bar::before{content:"";position:absolute;left:-2px;top:-2px;bottom:-2px;width:8px;background:var(--acc)}
+html[data-cc=silownia] .cc-sw span::after{border-radius:0}html[data-cc=silownia] .cc-sw span{border-radius:0}html[data-cc=silownia] .cc-x{border-radius:0}
+html[data-cc=budowlana] .cc-root{--cc-bg:var(--paper);--cc-ink:var(--ink);--cc-mut:var(--mut);--cc-line:var(--line);--cc-acc:var(--ink);--cc-on:var(--paper);--cc-font:var(--f);--cc-hfont:var(--d);--cc-hw:800;--cc-r:6px;--cc-br:4px;--cc-sh:0 30px 60px -25px rgba(10,20,40,.45);--cc-scrim:rgba(10,20,40,.6)}
+html[data-cc=budowlana] .cc-bar,html[data-cc=budowlana] .cc-dlg{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:22px 22px}
+html[data-cc=budowlana] .cc-bar::before,html[data-cc=budowlana] .cc-dlg::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;border-radius:6px 6px 0 0;background:repeating-linear-gradient(-45deg,var(--yel) 0 12px,#14213d 12px 24px)}
+html[data-cc=budowlana] .cc-bar{padding-top:28px}html[data-cc=budowlana] .cc-dlg{padding-top:32px}
+html[data-cc=budowlana] .cc-save{background:var(--yel)!important;border-color:var(--yel)!important;color:#14213d!important}
+html[data-cc=budowlana] .cc-sw input:checked+span{background:var(--yel);border-color:var(--yel)}
+html[data-cc=budowlana] .cc-always{font-family:var(--m)}

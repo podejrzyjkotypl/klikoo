@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html data-cc="budowlana" lang="pl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fundamo · budowa domów i remonty pod klucz | projekt demonstracyjny</title>
+<meta name="description" content="Fundamo – fikcyjna firma budowlana: domy pod klucz, remonty i wykończenia. Kalkulator kosztu remontu za m², realizacje przed i po, harmonogram budowy i formularz wyceny. Projekt demonstracyjny studia Klikoo.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14213d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fundamo · budownictwo i remonty (demo Klikoo)">
+<meta property="og:description" content="Kalkulator remontu, realizacje przed/po i wycena w 48 h. Projekt demonstracyjny.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%2314213d'/><path d='M12 52V30l20-16 20 16v22' fill='none' stroke='%23ffc300' stroke-width='6'/><path d='M24 52V38h16v14' fill='%23ffc300'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="consent.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Fundamo (projekt demonstracyjny)","address":{"@type":"PostalAddress","streetAddress":"[ul. Przykładowa 5]","addressLocality":"[Miasto]"},"areaServed":"[Województwo]"}</script>
+</head>
+<body>
+<a href="#main" class="skip">Przejdź do treści</a>
+<div class="demo-note"><span>PROJEKT DEMONSTRACYJNY KLIKOO</span> Fundamo to fikcyjna firma. Realizacje, osoby, opinie i ceny są przykładowe.</div>
+<div class="topbar"><div class="wrap"><span>☎ [+48 000 000 000]</span><span>Pn–Pt 7:00–17:00 · Sob 8:00–13:00</span><span class="hl">Wycena w 48 h*</span></div></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo" aria-label="Fundamo – strona główna"><svg viewBox="0 0 44 44" width="40" height="40" aria-hidden="true"><rect width="44" height="44" rx="6" fill="var(--ink)"/><path d="M8 36V20L22 9l14 11v16" fill="none" stroke="var(--yel)" stroke-width="4"/><path d="M17 36V26h10v10" fill="var(--yel)"/></svg><span><b>FUNDAMO</b><small>budownictwo · remonty</small></span></a>
+    <nav class="links" aria-label="Sekcje">
+      <a href="#uslugi"><i>01</i>Usługi</a><a href="#realizacje"><i>02</i>Realizacje</a><a href="#kalkulator"><i>03</i>Kalkulator</a><a href="#proces"><i>04</i>Proces</a><a href="#harmonogram"><i>05</i>Harmonogram</a><a href="#kontakt"><i>06</i>Kontakt</a>
+    </nav>
+    <button class="ic" data-theme-toggle aria-label="Przełącz tryb jasny/ciemny (plan techniczny)"><svg viewBox="0 0 24 24"><path d="M3 3h18v18H3zM3 9h18M9 9v12"/></svg></button>
+    <a href="#wycena" class="cta">Bezpłatna wycena</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i><i></i></button>
+  </div>
+  <div class="build" aria-hidden="true"><i id="buildBar"></i><span id="buildTxt">stan budowy strony: 0%</span></div>
+</header>
+
+<nav class="mnav" id="mnav" aria-label="Menu mobilne">
+  <div class="mn-scrim" data-close></div>
+  <div class="mn-sheet">
+    <span class="mn-handle" aria-hidden="true"></span>
+    <p class="mn-h">Gdzie idziemy? <small>Plan strony · skala 1:1</small></p>
+    <ul class="mn-grid">
+      <li><a href="#uslugi"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11M10 21v-6h4v6"/></svg><b>Usługi</b><small>domy, remonty, dachy</small></a></li>
+      <li><a href="#realizacje"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><b>Realizacje</b><small>przed i po</small></a></li>
+      <li><a href="#kalkulator"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20"/><path d="M8 6h8M8 11h2M14 11h2M8 15h2M14 15h2M8 19h2M14 19h2"/></svg><b>Kalkulator</b><small>koszt za m²</small></a></li>
+      <li><a href="#proces"><svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 6h5v12H7M12 12h5"/></svg><b>Proces</b><small>6 etapów</small></a></li>
+      <li><a href="#harmonogram"><svg viewBox="0 0 24 24"><path d="M3 5h8M6 10h10M10 15h9M4 20h6"/></svg><b>Harmonogram</b><small>ile to potrwa</small></a></li>
+      <li><a href="#kontakt"><svg viewBox="0 0 24 24"><path d="M12 22s7-7 7-12a7 7 0 00-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><b>Kontakt</b><small>biuro i obszar</small></a></li>
+    </ul>
+    <div class="mn-act"><a href="#wycena" class="btn yel">Wycena 0 zł →</a><a href="tel:+48000000000" class="btn line">☎ Zadzwoń</a></div>
+    <p class="mn-foot">Projekt demonstracyjny Klikoo · dane kontaktowe przykładowe</p>
+  </div>
+</nav>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <p class="tag"><span></span>Budujemy od 2009 r.* · [województwo i okolice]</p>
+      <h1 data-split>Dom, remont, wykończenie. Jedna ekipa, jeden termin.</h1>
+      <p class="lead" data-reveal>Stawiamy domy od fundamentów po klucz i odnawiamy mieszkania bez niespodzianek w kosztorysie. Stała cena w umowie, harmonogram w aplikacji, kierownik budowy pod telefonem.</p>
+      <div class="hero-cta" data-reveal><a href="#kalkulator" class="btn yel">Policz koszt remontu</a><a href="#realizacje" class="btn line">Zobacz realizacje</a></div>
+    </div>
+    <figure class="hero-fig" data-reveal>
+      <img src="img/hero.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1024w, img/hero-1920.webp 1920w" sizes="(max-width:900px) 100vw, 55vw" alt="Dom jednorodzinny w budowie z rusztowaniem i drewnianą więźbą dachową" fetchpriority="high">
+      <span class="dim dim-h" aria-hidden="true"><i></i><em>12 400 mm</em></span>
+      <span class="dim dim-v" aria-hidden="true"><i></i><em>8 200</em></span>
+      <figcaption><b>Etap: więźba dachowa</b><span>Dom 148 m² · realizacja przykładowa</span></figcaption>
+    </figure>
+  </div>
+  <div class="wrap stats" data-stagger>
+    <div><b data-count-to="140">0</b><span>domów pod klucz*</span></div>
+    <div><b data-count-to="620">0</b><span>remontów mieszkań*</span></div>
+    <div><b data-count-to="96">0</b><span>% w terminie*</span></div>
+    <div><b data-count-to="5">0</b><span>lat gwarancji*</span></div>
+  </div>
+  <p class="wrap small muted">* dane przykładowe, firma fikcyjna</p>
+</section>
+
+<section class="sec" id="uslugi">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">01 — usługi</p><h2 data-split>Od wykopu po ostatnią listwę</h2></header>
+    <div class="svc">
+      <div class="svc-tabs" role="tablist" aria-label="Usługi" id="svcTabs"></div>
+      <div class="svc-pane" id="svcPane" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="realizacje">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">02 — realizacje</p><h2 data-split>Przed i po. Bez filtrów.</h2><p class="muted" data-reveal>Przesuń suwak, żeby porównać. Zdjęcia poglądowe, wygenerowane na potrzeby demo.</p></header>
+    <div class="ba-tabs" role="tablist" aria-label="Wybierz realizację"><button type="button" role="tab" class="on" aria-selected="true" data-ba="kitchen">Kuchnia w bloku · 9 m²</button><button type="button" role="tab" aria-selected="false" data-ba="bath">Łazienka w kamienicy · 7 m²</button></div>
+    <div class="ba-box">
+      <div class="ba" id="ba">
+        <img id="baBefore" src="img/kitchen-before.webp" alt="Kuchnia przed remontem: stare brązowe szafki i zniszczona podłoga" draggable="false">
+        <div class="ba-after" id="baAfterWrap"><img id="baAfter" src="img/kitchen-after.webp" alt="Ta sama kuchnia po remoncie: zielone szafki bez uchwytów i jasna podłoga" draggable="false"></div>
+        <span class="ba-line" aria-hidden="true"><span class="ba-knob">◂ ▸</span></span>
+        <span class="ba-l l1">PRZED</span><span class="ba-l l2">PO</span>
+        <input type="range" min="0" max="100" value="50" id="baR" aria-label="Porównaj zdjęcie przed i po remoncie">
+      </div>
+      <aside class="ba-spec" id="baSpec"></aside>
+    </div>
+    <div class="gal-tools"><div class="chips" id="galF" role="group" aria-label="Filtruj realizacje"></div><span class="muted small" id="galN"></span></div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section class="sec" id="kalkulator">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">03 — kalkulator</p><h2 data-split>Ile kosztuje remont? Policz w minutę.</h2><p class="muted" data-reveal>Wynik to orientacyjny przedział z przykładowym cennikiem. Dokładny kosztorys po bezpłatnych oględzinach.</p></header>
+    <div class="calc">
+      <form class="calc-f" id="calcF" onsubmit="return false">
+        <fieldset><legend><span>A</span>Rodzaj lokalu</legend><div class="opts" id="cType"></div></fieldset>
+        <fieldset><legend><span>B</span>Powierzchnia</legend>
+          <div class="area"><input type="range" id="cArea" min="15" max="250" value="55" aria-label="Powierzchnia w m²"><label class="num"><input type="number" id="cAreaN" min="15" max="250" value="55" aria-label="Powierzchnia w m² (wpisz)"><span>m²</span></label></div>
+          <div class="plan" id="cPlan" aria-hidden="true"></div>
+        </fieldset>
+        <fieldset><legend><span>C</span>Standard wykończenia</legend><div class="opts std" id="cStd"></div></fieldset>
+        <fieldset><legend><span>D</span>Zakres prac</legend><div class="scope" id="cScope"></div></fieldset>
+        <fieldset><legend><span>E</span>Materiały</legend><div class="opts" id="cMat"></div></fieldset>
+      </form>
+      <aside class="calc-r" aria-live="polite">
+        <p class="eyebrow">kosztorys orientacyjny*</p>
+        <p class="total"><b id="rMin">–</b><span>–</span><b id="rMax">–</b></p>
+        <p class="per">ok. <b id="rM2">–</b> / m² · czas prac: <b id="rWk">–</b></p>
+        <ul class="brk" id="rBrk"></ul>
+        <button type="button" class="btn yel" id="toQuote">Przenieś do formularza wyceny →</button>
+        <p class="small">* ceny przykładowe, netto, wymyślone na potrzeby demo</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="proces">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">04 — proces</p><h2 data-split>Jak pracujemy</h2><p class="muted" data-reveal>Sześć etapów, każdy kończy się odbiorem i Twoim podpisem. Kliknij etap, żeby rozwinąć.</p></header>
+    <ol class="tl" id="tl">
+      <li><button type="button" aria-expanded="true"><span class="tl-n">01</span><b>Rozmowa i oględziny</b><small>dzień 1–3</small></button><div class="tl-b"><p>Przyjeżdżamy, mierzymy, słuchamy. Robimy zdjęcia i notujemy, co ma zostać, a co do wymiany. Bez opłat (zasada przykładowa).</p></div></li>
+      <li><button type="button" aria-expanded="false"><span class="tl-n">02</span><b>Kosztorys i projekt</b><small>do 48 h*</small></button><div class="tl-b"><p>Dostajesz kosztorys pozycja po pozycji i wizualizację kluczowych pomieszczeń. Widzisz, za co płacisz.</p></div></li>
+      <li><button type="button" aria-expanded="false"><span class="tl-n">03</span><b>Umowa ze stałą ceną</b><small>tydzień 1</small></button><div class="tl-b"><p>Cena i harmonogram w umowie. Ewentualne zmiany tylko aneksem, który akceptujesz przed rozpoczęciem prac.</p></div></li>
+      <li><button type="button" aria-expanded="false"><span class="tl-n">04</span><b>Prace i raporty</b><small>wg harmonogramu</small></button><div class="tl-b"><p>Codzienny raport ze zdjęciami w aplikacji klienta. Kierownik budowy odbiera telefon, a nie oddzwania „w przyszłym tygodniu”.</p></div></li>
+      <li><button type="button" aria-expanded="false"><span class="tl-n">05</span><b>Odbiory częściowe</b><small>po każdym etapie</small></button><div class="tl-b"><p>Instalacje, tynki, wylewki: każdy etap odbieramy razem z checklistą, zanim zostanie zakryty.</p></div></li>
+      <li><button type="button" aria-expanded="false"><span class="tl-n">06</span><b>Sprzątanie i klucze</b><small>finał</small></button><div class="tl-b"><p>Oddajemy wysprzątane wnętrze, dokumentację powykonawczą i kartę gwarancyjną na 5 lat (przykład).</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="harmonogram">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">05 — harmonogram</p><h2 data-split>Ile trwa budowa domu?</h2><p class="muted" data-reveal>Przykładowy harmonogram domu ok. 140 m². Wybierz stan, do którego budujemy, i najedź na etap.</p></header>
+    <div class="gantt-tools"><div class="seg" id="gPkg" role="radiogroup" aria-label="Zakres budowy"></div><label class="tgl"><input type="checkbox" id="gWinter"><span></span>Start jesienią (przerwa zimowa)</label></div>
+    <div class="gantt" id="gantt"></div>
+    <p class="gantt-info" id="gInfo" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="sec alt" id="zespol">
+  <div class="wrap team">
+    <figure class="person" data-reveal><img src="img/p1-640.webp" srcset="img/p1-640.webp 640w, img/p1.webp 1024w" sizes="(max-width:900px) 100vw, 30vw" alt="Właściciel firmy w granatowej kurtce z kaskiem pod pachą" loading="lazy"><figcaption><b>Marek Zawada</b><span>właściciel, mistrz budowlany · postać fikcyjna</span></figcaption></figure>
+    <figure class="person" data-reveal style="--d:.1s"><img src="img/p2-640.webp" srcset="img/p2-640.webp 640w, img/p2.webp 1024w" sizes="(max-width:900px) 100vw, 30vw" alt="Inżynier budowy w kasku i kamizelce z tabletem" loading="lazy"><figcaption><b>Anna Krawiec</b><span>kierownik budowy, uprawnienia [nr] · postać fikcyjna</span></figcaption></figure>
+    <div class="team-txt">
+      <header class="sh"><p class="eyebrow">06 — ludzie</p><h2 data-split>Znasz z imienia każdego, kto wchodzi na budowę</h2></header>
+      <ul class="cert" data-stagger><li><b>OC 2 mln zł*</b><span>polisa na każdą budowę</span></li><li><b>5 lat*</b><span>gwarancji na roboty</span></li><li><b>Stała cena</b><span>zapisana w umowie</span></li><li><b>Własna ekipa</b><span>bez przypadkowych podwykonawców</span></li></ul>
+      <div class="reviews">
+        <p class="eyebrow">opinie · <em>przykładowe, fikcyjne</em></p>
+        <div class="rv-vp"><div class="rv-track">
+          <div class="rv-item"><blockquote>„Łazienka gotowa w 12 dni, tak jak w harmonogramie. Codziennie zdjęcia w aplikacji, więc nie musiałem jeździć na budowę.”</blockquote><cite>przykładowa opinia · remont łazienki</cite></div>
+          <div class="rv-item"><blockquote>„Kosztorys zgadzał się co do złotówki. Jedyna zmiana to nasz pomysł na dodatkowe gniazdka i od razu dostaliśmy aneks.”</blockquote><cite>przykładowa opinia · mieszkanie 64 m²</cite></div>
+          <div class="rv-item"><blockquote>„Od fundamentów do kluczy 11 miesięcy. Pani kierownik odbierała telefon nawet w sobotę.”</blockquote><cite>przykładowa opinia · dom 152 m²</cite></div>
+        </div></div>
+        <div class="rv-dots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="wycena">
+  <div class="wrap quote">
+    <div class="q-side">
+      <header class="sh"><p class="eyebrow">07 — wycena</p><h2 data-split>Bezpłatna wycena w 48 h*</h2></header>
+      <p class="muted">Opisz inwestycję i dołącz zdjęcia lub rzut. Oddzwonimy, umówimy oględziny i przygotujemy kosztorys.</p>
+      <img src="img/plans-640.webp" srcset="img/plans-640.webp 640w, img/plans.webp 1024w" sizes="(max-width:900px) 100vw, 40vw" alt="Projekt domu na stole, kask, miarka i laptop" loading="lazy" class="q-img">
+      <p class="small muted">* termin przykładowy · firma fikcyjna</p>
+    </div>
+    <form class="q-form" id="qForm" novalidate>
+      <div class="q-calc" id="qCalc" hidden></div>
+      <fieldset class="q-type"><legend>Czego dotyczy zapytanie?</legend>
+        <label><input type="radio" name="qt" value="Remont mieszkania" checked><span>Remont mieszkania</span></label>
+        <label><input type="radio" name="qt" value="Budowa domu"><span>Budowa domu</span></label>
+        <label><input type="radio" name="qt" value="Wykończenie pod klucz"><span>Wykończenie pod klucz</span></label>
+        <label><input type="radio" name="qt" value="Elewacja / dach"><span>Elewacja / dach</span></label>
+      </fieldset>
+      <div class="grid2">
+        <label class="fld">Imię i nazwisko<input name="n" required autocomplete="name"></label>
+        <label class="fld">Telefon<input name="t" type="tel" required placeholder="[000 000 000]" autocomplete="tel"></label>
+        <label class="fld">E-mail<input name="e" type="email" required placeholder="email@domena.pl" autocomplete="email"></label>
+        <label class="fld">Miejscowość inwestycji<input name="m" required placeholder="[Miasto]"></label>
+        <label class="fld">Planowany start<select name="s" id="qStart"></select></label>
+        <label class="fld">Budżet: <b id="qBudL"></b><input type="range" name="b" id="qBud" min="20" max="1500" step="10" value="120"></label>
+        <label class="fld wide">Opis prac<textarea name="d" rows="3" placeholder="np. kuchnia i łazienka, wymiana instalacji, podłogi w całym mieszkaniu"></textarea></label>
+        <div class="fld wide"><span>Zdjęcia, rzut lub projekt (opcjonalnie)</span><label class="drop" id="drop"><input type="file" id="qFiles" multiple accept="image/*,.pdf"><span><b>Przeciągnij pliki</b> lub kliknij, żeby wybrać · w demo pliki nie są wysyłane</span></label><ul class="files" id="qFl"></ul></div>
+        <label class="chk wide"><input type="checkbox" required> Rozumiem, że to formularz demonstracyjny i dane nie są nigdzie wysyłane.</label>
+      </div>
+      <button class="btn yel big" type="submit">Wyślij zapytanie (demo)</button>
+    </form>
+  </div>
+</section>
+
+<section class="sec alt" id="kontakt">
+  <div class="wrap contact">
+    <div>
+      <header class="sh"><p class="eyebrow">08 — kontakt</p><h2>Biuro i plac</h2></header>
+      <dl class="info"><dt>Adres</dt><dd>[ul. Przykładowa 5, 00-000 Miasto]</dd><dt>Telefon</dt><dd>[+48 000 000 000]</dd><dt>E-mail</dt><dd>[biuro@przyklad.pl]</dd><dt>Godziny</dt><dd>Pn–Pt 7:00–17:00 · Sob 8:00–13:00</dd><dt>NIP</dt><dd>[000-000-00-00]</dd></dl>
+      <div class="area-chk"><label for="dist">Jak daleko jest Twoja inwestycja od [Miasto]? <b id="distL"></b></label><input type="range" id="dist" min="0" max="150" value="30"><p id="distR" aria-live="polite"></p></div>
+      <div class="faq">
+        <details><summary>Czy robicie małe remonty, np. jedną łazienkę?</summary><p>Tak. Najmniejsze zlecenia zaczynamy od jednego pomieszczenia (zasada przykładowa).</p></details>
+        <details><summary>Kto kupuje materiały?</summary><p>Jak wolisz: my (z rabatem hurtowym) albo Ty według naszej listy. Kalkulator pokazuje obie opcje.</p></details>
+        <details><summary>Jak wyglądają płatności?</summary><p>Zaliczka na materiały i płatności po odbiorach etapów. [Szczegóły do uzupełnienia].</p></details>
+        <details><summary>Czy załatwiacie pozwolenia?</summary><p>Pomagamy w zgłoszeniach i dokumentacji. [Zakres do uzupełnienia].</p></details>
+      </div>
+    </div>
+    <div class="map" role="img" aria-label="Mapa obszaru działania (placeholder)">
+      <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><pattern id="mg" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="var(--grid2)"/></pattern></defs><rect width="600" height="600" fill="url(#mg)"/><g fill="none" stroke="var(--ink)" stroke-opacity=".25"><path d="M0 380 C150 340 260 420 600 300" stroke-width="8"/><path d="M260 0 L320 600" stroke-width="5"/><path d="M0 120 L600 200" stroke-width="3"/></g><circle cx="300" cy="300" r="250" fill="none" stroke="var(--ink)" stroke-dasharray="6 8" opacity=".4"/><circle id="mapR" cx="300" cy="300" r="60" fill="var(--yel)" fill-opacity=".25" stroke="var(--yel)" stroke-width="3"/><rect x="290" y="290" width="20" height="20" fill="var(--ink)"/></svg>
+      <span class="map-l">BAZA · [Miasto]</span><span class="map-r">zasięg 150 km</span>
+      <p class="map-cap">[mapa Google do osadzenia]</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="hazard" aria-hidden="true"></div>
+  <div class="wrap foot-in">
+    <div><a href="#top" class="logo"><svg viewBox="0 0 44 44" width="40" height="40" aria-hidden="true"><rect width="44" height="44" rx="6" fill="var(--yel)"/><path d="M8 36V20L22 9l14 11v16" fill="none" stroke="#14213d" stroke-width="4"/><path d="M17 36V26h10v10" fill="#14213d"/></svg><span><b>FUNDAMO</b><small>budownictwo · remonty</small></span></a><p>Fikcyjna firma budowlana. Strona przygotowana jako projekt demonstracyjny.</p></div>
+    <ul class="foot-links"><li><a href="#uslugi">Usługi</a></li><li><a href="#realizacje">Realizacje</a></li><li><a href="#kalkulator">Kalkulator</a></li><li><a href="#wycena">Wycena</a></li></ul>
+    <form class="news" data-demo-form="Zapisano! (demo, nic nie zostało wysłane)" novalidate><label for="nl">Poradnik „Remont bez stresu” na maila</label><div><input id="nl" type="email" required placeholder="email@domena.pl"><button class="btn yel">Wyślij</button></div></form>
+  </div>
+  <div class="wrap foot-b"><span>© <span id="yr"></span> Fundamo · [dane firmy] · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <button type="button" class="cc-foot-link" data-cc-open>Ustawienia cookies</button></span><span>Projekt demonstracyjny <a href="../../">Klikoo</a> · firma, osoby, opinie i ceny są fikcyjne</span></div>
+</footer>
+
+<script src="kit.js"></script>
+<script src="main.js"></script>
+<script src="consent.js" defer></script>
+</body>
+</html>
