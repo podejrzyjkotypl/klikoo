@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="dark">
+<html data-cc="serwis" lang="pl" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -17,6 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ElectronicsStore","name":"Nanofix (projekt demonstracyjny)","address":{"@type":"PostalAddress","streetAddress":"[ul. Przykładowa 7]","addressLocality":"[Miasto]"}}</script>
+<link rel="stylesheet" href="consent.css">
 </head>
 <body>
 <a href="#main" class="skip">Przejdź do treści</a>
@@ -252,7 +253,7 @@
     <div><a href="#top" class="logo"><span>nanofix</span></a><p class="muted">Fikcyjny serwis telefonów. Strona przygotowana jako projekt demonstracyjny.</p></div>
     <form class="news" data-demo-form="Zapisano do newslettera (demo, nic nie zostało wysłane)." novalidate><label for="nl" class="mono">newsletter: porady i promocje na akcesoria</label><div><input id="nl" type="email" required placeholder="email@domena.pl"><button class="btn">Zapisz</button></div></form>
   </div>
-  <div class="wrap foot-b mono"><span>© <span id="yr"></span> nanofix · [dane firmy]</span><span>projekt demonstracyjny <a href="../../">klikoo</a> · firma, osoby, opinie i ceny są fikcyjne</span></div>
+  <div class="wrap foot-b mono"><span>© <span id="yr"></span> nanofix · [dane firmy] · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <button type="button" class="cc-foot-link" data-cc-open>Ustawienia cookies</button></span><span>projekt demonstracyjny <a href="../../">klikoo</a> · firma, osoby, opinie i ceny są fikcyjne</span></div>
 </footer>
 
 <aside class="cart" id="cart" aria-label="Koszyk" aria-hidden="true">
@@ -264,9 +265,9 @@
   </div>
 </aside>
 
-<div class="cookie glass" role="dialog" aria-label="Pliki cookies"><p class="mono">&gt; cookies.policy</p><p>Ta demonstracyjna strona nie używa śledzących cookies. Zapisujemy tylko koszyk i motyw w Twojej przeglądarce.</p><div><button class="btn" data-cookie="all">Akceptuję</button><button class="btn ghost" data-cookie="min">Tylko niezbędne</button></div></div>
 
 <script src="kit.js"></script>
 <script src="main.js"></script>
+<script src="consent.js" defer></script>
 </body>
 </html>

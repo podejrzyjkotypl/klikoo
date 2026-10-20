@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html data-cc="fryzjer" lang="pl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -18,6 +18,7 @@
 <link rel="preload" as="image" href="img/hero-1920.webp" imagesrcset="img/hero-640.webp 640w, img/hero.webp 1024w, img/hero-1920.webp 1920w" imagesizes="100vw">
 <link rel="stylesheet" href="kit.css"><link rel="stylesheet" href="style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"HairSalon","name":"Studio Loka (projekt demonstracyjny)","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"[ul. Przykładowa 5]","addressLocality":"[Miasto]"}}</script>
+<link rel="stylesheet" href="consent.css">
 </head>
 <body class="has-hero">
 <a href="#main" class="skip">Przejdź do treści</a>
@@ -280,13 +281,13 @@
       <div><h4>Na skróty</h4><ul><li><a href="#cennik">Cennik</a></li><li><a href="#rezerwacja">Rezerwacja</a></li><li><a href="#metamorfozy">Metamorfozy</a></li><li><a href="#voucher">Vouchery</a></li></ul></div>
       <div><h4>Newsletter</h4><p style="opacity:.7;font-size:.9rem">Porady pielęgnacyjne i wolne terminy.</p><form class="news" data-demo-form="Zapisano do newslettera (demo, nic nie zostało wysłane)." novalidate><input type="email" required placeholder="Twój e-mail" aria-label="E-mail do newslettera"><button aria-label="Zapisz">→</button></form></div>
     </div>
-    <div class="foot-bottom"><span>© <span id="yr"></span> Studio Loka · [dane firmy]</span><span>Projekt demonstracyjny <a href="../../">Klikoo</a> · salon, osoby, opinie i ceny są fikcyjne</span></div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Studio Loka · [dane firmy] · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <button type="button" class="cc-foot-link" data-cc-open>Ustawienia cookies</button></span><span>Projekt demonstracyjny <a href="../../">Klikoo</a> · salon, osoby, opinie i ceny są fikcyjne</span></div>
   </div>
 </footer>
 
-<div class="cookie" role="dialog" aria-label="Pliki cookies"><b>🍪 Ciasteczka</b><p>Ta demonstracyjna strona nie używa śledzących cookies. Zapamiętujemy tylko Twój wybór i tryb kolorów.</p><div class="row"><button class="btn" data-cookie="all">W porządku</button><button class="btn ghost" data-cookie="min">Tylko niezbędne</button></div></div>
 
 <script src="kit.js"></script>
 <script src="main.js"></script>
+<script src="consent.js" defer></script>
 </body>
 </html>
