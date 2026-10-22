@@ -33,10 +33,8 @@ section{position:relative}
 .btn.line{border-color:var(--line-strong)}.btn.line:hover{border-color:var(--gold);color:var(--gold)}
 .btn.glass{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25);color:#fff;backdrop-filter:blur(8px)}.btn.glass:hover{background:rgba(255,255,255,.16)}
 .linkbtn{background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;color:inherit;font-size:inherit}
-/* preview strip */
-.preview-strip{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:.75rem;padding:7px 14px;background:#000;color:#d9cfbe;border-bottom:1px solid rgba(207,171,98,.3);text-align:center}
-.preview-strip b{color:#e6c98a;font-weight:600}.ps-dot{width:7px;height:7px;border-radius:50%;background:#d2452f}
-@media(max-width:600px){.preview-strip span:not(.ps-dot){display:none}}
+/* demo strip */
+.demo-note{background:var(--gold);color:var(--on-gold);text-align:center;font-size:.74rem;padding:6px 16px;letter-spacing:.02em}
 /* header */
 .nav{position:sticky;top:0;z-index:70;display:flex;align-items:center;gap:22px;padding:12px max(20px,calc((100% - 1240px)/2));background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid transparent;transition:.3s}
 .nav.scrolled{border-color:var(--line);background:color-mix(in srgb,var(--bg) 88%,transparent)}

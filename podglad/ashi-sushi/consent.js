@@ -15,7 +15,7 @@
 <section class="cc-bar" role="region" aria-label="Zgoda na pliki cookies" aria-describedby="cc-desc" hidden>
   <div class="cc-txt"><h2 class="cc-h">${ico}<span>Szanujemy Twoją prywatność</span></h2>
   <p id="cc-desc">Używamy plików cookies, aby strona działała poprawnie, a za Twoją zgodą – także do analityki i marketingu. Możesz zaakceptować wszystkie, odrzucić opcjonalne albo wybrać kategorie. Zgodę zmienisz w każdej chwili w stopce. <a href="${privacy}">Polityka prywatności</a></p>
-  <p class="cc-demo">Podgląd projektu – ta wersja strony nie ładuje żadnych narzędzi śledzących.</p></div>
+  <p class="cc-demo">Projekt demonstracyjny – strona nie ładuje żadnych narzędzi śledzących.</p></div>
   <div class="cc-btns"><button type="button" class="cc-b" data-cc="all">Akceptuj wszystkie</button><button type="button" class="cc-b" data-cc="none">Odrzuć wszystkie</button><button type="button" class="cc-b" data-cc="settings">Ustawienia</button></div>
 </section>
 <div class="cc-modal" hidden>
@@ -24,7 +24,7 @@
     <header class="cc-mh"><h2 id="cc-mt" class="cc-h">${ico}<span>Ustawienia prywatności</span></h2><button type="button" class="cc-x" data-cc="close" aria-label="Zamknij ustawienia">×</button></header>
     <p id="cc-md" class="cc-lead">Wybierz, na które kategorie plików cookies się zgadzasz. Niezbędne są zawsze aktywne, bo bez nich strona nie działa. Szczegóły znajdziesz w <a href="${privacy}">polityce prywatności</a>.</p>
     <ul class="cc-list">${CATS.map(([k, n, t]) => `<li class="cc-cat"><div><h3 id="cc-l-${k}">${n}${k === 'necessary' ? ' <span class="cc-always">zawsze aktywne</span>' : ''}</h3><p id="cc-d-${k}">${t}</p></div><label class="cc-sw"><input type="checkbox" role="switch" data-k="${k}" aria-labelledby="cc-l-${k}" aria-describedby="cc-d-${k}"${k === 'necessary' ? ' checked disabled' : ''}><span aria-hidden="true"></span></label></li>`).join('')}</ul>
-    <p class="cc-demo">Podgląd: wybór zapisuje się w Twojej przeglądarce. Mapa Google ładuje się dopiero po zgodzie na pliki funkcjonalne.</p>
+    <p class="cc-demo">Demo: wybór zapisuje się w Twojej przeglądarce. Mapa Google ładuje się dopiero po zgodzie na pliki funkcjonalne.</p>
     <footer class="cc-mf"><button type="button" class="cc-b" data-cc="none">Odrzuć wszystkie</button><button type="button" class="cc-b" data-cc="all">Akceptuj wszystkie</button><button type="button" class="cc-b cc-save" data-cc="save">Zapisz wybory</button></footer>
   </div>
 </div>
